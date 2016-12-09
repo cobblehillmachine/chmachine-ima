@@ -12,6 +12,5 @@
       endif;
       ?>
     </nav>
-    <div class="clear"></div>
   </div>
 </header>

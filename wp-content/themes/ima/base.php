@@ -7,7 +7,7 @@ use Roots\Sage\Wrapper;
 
 <!doctype html>
 <html <?php language_attributes(); ?>>
-  <?php get_template_part('partials/head'); ?>
+  <?php get_template_part('templates/head'); ?>
   <body <?php body_class(); ?>>
     <!--[if IE]>
       <div class="alert alert-warning">
@@ -15,27 +15,26 @@ use Roots\Sage\Wrapper;
       </div>
     <![endif]-->
     <?php
-      get_template_part('partials/announcement-bar');
+      get_template_part('templates/announcement-bar');
       do_action('get_header');
-      get_template_part('partials/header');
+      get_template_part('templates/header');
     ?>
     <div class="wrap container" role="document">
       <div class="content row">
         <main class="main">
-          <?php include App\template()->main(); ?>
-        </main>
-        <?php if (App\display_sidebar()) : ?>
+          <?php include Wrapper\template_path(); ?>
+        </main><!-- /.main -->
+        <?php if (Setup\display_sidebar()) : ?>
           <aside class="sidebar">
-            <?php App\template_part('partials/sidebar'); ?>
-          </aside>
+            <?php include Wrapper\sidebar_path(); ?>
+          </aside><!-- /.sidebar -->
         <?php endif; ?>
-      </div>
-    </div>
+      </div><!-- /.content -->
+    </div><!-- /.wrap -->
     <?php
       do_action('get_footer');
-      get_template_part('partials/footer');
+      get_template_part('templates/footer');
       wp_footer();
     ?>
   </body>
 </html>
-

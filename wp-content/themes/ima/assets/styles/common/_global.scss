@@ -1,1 +1,54 @@
+// Fonts
+@mixin font-effra-light {
+  font-family: "effra",sans-serif;
+  font-weight: 300;
+  letter-spacing: .05em;
+}
+
+@mixin font-effra-regular {
+  font-family: "effra",sans-serif;
+  font-weight: 400;
+}
+
+// Utilities
+.clear {
+  clear: both;
+}
+
+// Menus
+.logo img {
+  max-width: 140px;
+  position: absolute;
+}
+.nav-primary {
+  width: 80%;
+  float: right;
+}
+.menu-menu-1-container {
+  text-align: center;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    @include font-effra-regular();
+    text-transform: uppercase;
+    font-size: $font-size-medium;
+    padding: 20px 0;
+    a {
+      color: $color-black;
+    }
+  }
+  #menu-item-33 {
+    padding-left: 20px;
+    background-image: url('../assets/images/icon-member.png');
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: 24px;
+    a {
+      color: $color-red;
+    }
+  }
+}
 

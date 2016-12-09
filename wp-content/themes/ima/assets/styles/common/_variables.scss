@@ -1,7 +1,19 @@
-// Grid settings
+// Colors
+$brand-primary:         #27ae60;
+$color-gray:            #f6f6f6;
+$color-black:           #000;
+$color-red:             #e73325;
+
+// Global options
 $enable-flex:           true;
+
+// Grid settings
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
-// Colors
-$brand-primary:         #27ae60;
+// Vendor variables
+$fa-font-path:          '~font-awesome/fonts';
+
+// Font Sizes
+$font-size-small: 12px;
+$font-size-medium: 15px;
