@@ -1,19 +1,39 @@
-// Colors
+/* Colors */
 $brand-primary:         #27ae60;
 $color-gray:            #f6f6f6;
 $color-black:           #000;
 $color-red:             #e73325;
 
-// Global options
+/* Global options */
 $enable-flex:           true;
 
-// Grid settings
+/* Grid settings */
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
-// Vendor variables
+/* Vendor variables */
 $fa-font-path:          '~font-awesome/fonts';
 
-// Font Sizes
+/* Font Sizes */
 $font-size-small: 12px;
 $font-size-medium: 15px;
+
+/* Aspect Ration Mixin */
+ /* Usage: @include aspect-ratio(16, 9)  */
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
