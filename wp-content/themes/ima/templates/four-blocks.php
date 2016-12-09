@@ -7,8 +7,10 @@
   ?>
 
   <div class="block" style="background-image: url(<?php echo $image; ?>);">
-    <h3><?php echo $header; ?></h3>
-    <p><?php echo $text; ?></p>
+    <div>
+      <h3><?php echo $header; ?></h3>
+      <p><?php echo $text; ?></p>
+    </div>
   </div>
 
   <?php endwhile; endif; ?>
