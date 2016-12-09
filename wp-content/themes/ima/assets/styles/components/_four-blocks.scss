@@ -1,0 +1,6 @@
+.four-blocks {
+  p {
+    @include font-effra-regular();
+    @include font-medium();
+  }
+}

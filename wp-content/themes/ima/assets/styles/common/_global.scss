@@ -49,6 +49,13 @@
   }
 }
 
+@mixin font-medium-large {
+  font-size: $font-size-medium-large;
+  @include bp(m) {
+    font-size: $font-size-medium-large * .75;
+  }
+}
+
 @mixin font-large {
   font-size: $font-size-large;
   @include bp(m) {
@@ -56,10 +63,15 @@
   }
 }
 
-/* Headers */
+/* Headers + Such */
 h2 {
   @include font-mont-bold();
   @include font-large();
+}
+
+h3 {
+  @include font-mont-bold();
+  @include font-medium-large();
 }
 
 /* Utilities */

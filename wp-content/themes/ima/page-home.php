@@ -10,8 +10,13 @@
     <div class="full-width-text-block">
       <div class="arrow-up"></div>
       <h2><?php echo $header; ?></h2>
+
       <?php echo $content; ?>
+
     </div>
+
+    <?php get_template_part('templates/four-blocks'); ?>
+
   </div>
 
 <?php endwhile; ?>
