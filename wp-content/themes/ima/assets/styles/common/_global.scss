@@ -14,6 +14,9 @@
 .clear {
   clear: both;
 }
+img {
+  max-width: 100%;
+}
 
 /* Menus */
 .logo img {
@@ -41,7 +44,7 @@
   }
   #menu-item-29 {
     padding-left: 20px;
-    background-image: url('../assets/images/icon-member.png');
+    background-image: url('../images/icon-member.png');
     background-size: 10px;
     background-repeat: no-repeat;
     background-position-x: left;

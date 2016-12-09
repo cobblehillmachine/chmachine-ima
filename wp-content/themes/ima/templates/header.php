@@ -13,4 +13,5 @@
       ?>
     </nav>
   </div>
+  <div class="clear"></div>
 </header>

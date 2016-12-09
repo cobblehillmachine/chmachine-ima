@@ -1,1 +1,4 @@
-<?php get_template_part('partials/hero'); ?>
+<div class="hero">
+  <img src="<?php echo the_field('hero_image'); ?>">
+</div>
+HELLO
