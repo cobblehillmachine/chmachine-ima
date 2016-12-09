@@ -1,4 +1,4 @@
-// Fonts
+/* Fonts */
 @mixin font-effra-light {
   font-family: "effra",sans-serif;
   font-weight: 300;
@@ -10,12 +10,12 @@
   font-weight: 400;
 }
 
-// Utilities
+/* Utilities */
 .clear {
   clear: both;
 }
 
-// Menus
+/* Menus */
 .logo img {
   max-width: 140px;
   position: absolute;
@@ -39,7 +39,7 @@
       color: $color-black;
     }
   }
-  #menu-item-33 {
+  #menu-item-29 {
     padding-left: 20px;
     background-image: url('../assets/images/icon-member.png');
     background-size: 10px;
