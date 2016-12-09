@@ -1,4 +1,15 @@
 /* Fonts */
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.eot');
+  src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Bold.woff') format('woff'),
+    url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 @mixin font-effra-light {
   font-family: "effra",sans-serif;
   font-weight: 300;
@@ -8,6 +19,47 @@
 @mixin font-effra-regular {
   font-family: "effra",sans-serif;
   font-weight: 400;
+}
+
+@mixin font-mont-bold {
+  font-family: "Montserrat",sans-serif;
+  font-weight: bold;
+}
+
+
+/* Responsive Typography */
+@mixin font-xsmall {
+  font-size: $font-size-xsmall;
+  @include bp(m) {
+    font-size: $font-size-xsmall * .75;
+  }
+}
+
+@mixin font-small {
+  font-size: $font-size-small;
+  @include bp(m) {
+    font-size: $font-size-small * .75;
+  }
+}
+
+@mixin font-medium {
+  font-size: $font-size-medium;
+  @include bp(m) {
+    font-size: $font-size-medium * .75;
+  }
+}
+
+@mixin font-large {
+  font-size: $font-size-large;
+  @include bp(m) {
+    font-size: $font-size-large * .75;
+  }
+}
+
+/* Headers */
+h2 {
+  @include font-mont-bold();
+  @include font-large();
 }
 
 /* Utilities */
@@ -70,7 +122,7 @@ img {
   li {
     @include font-effra-regular();
     text-transform: uppercase;
-    font-size: $font-size-medium;
+    font-size: $font-size-small;
     padding: 20px 0;
     a {
       color: $color-black;

@@ -3,7 +3,7 @@
   background-color: $color-gray;
   @include font-effra-light();
   text-align: center;
-  font-size: $font-size-small;
+  @include font-xsmall();
   text-transform: uppercase;
   p {
     padding: 13px;

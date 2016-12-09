@@ -1,0 +1,14 @@
+.full-width-text-block  {
+  text-align: center;
+  padding: 70px 0;
+  h2 {
+    color: $color-red;
+    margin-bottom: 20px;
+  }
+  p {
+    @include font-effra-light();
+    @include font-medium();
+    width: 75%;
+    margin: 0 auto;
+  }
+}

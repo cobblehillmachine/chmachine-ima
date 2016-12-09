@@ -1,3 +1,27 @@
+
+/* Breakpoint Mixin */
+$breakpoints: (
+  xl: (min-width: 100em),
+  l:  (max-width: 75em),
+  m:  (max-width: 55em),
+  s:  (max-width: 37.5em),
+  xs: (max-width: 18.75em),
+  custom: (max-width: 1066px)
+);
+
+@mixin bp($name) {
+  $value: map-get($breakpoints, $name);
+  @if map-has-key($breakpoints, $name) {
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "The '#{$name}' breakpoint is not defined. "
+        + "Please make sure it is defined in the global.scss '$breakpoint' map.";
+  }
+}
+
 /* Colors */
 $brand-primary:         #27ae60;
 $color-gray:            #f6f6f6;
@@ -15,8 +39,10 @@ $sidebar-sm-columns:    4;
 $fa-font-path:          '~font-awesome/fonts';
 
 /* Font Sizes */
-$font-size-small: 12px;
-$font-size-medium: 15px;
+$font-size-xsmall: 12px;
+$font-size-small: 15px;
+$font-size-medium: 18px;
+$font-size-large: 34px;
 
 /* Aspect Ration Mixin */
  /* Usage: @include aspect-ratio(16, 9)  */
@@ -37,3 +63,4 @@ $font-size-medium: 15px;
     bottom: 0;
   }
 }
+
