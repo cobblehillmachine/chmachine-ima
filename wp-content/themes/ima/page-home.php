@@ -16,6 +16,7 @@
     </div>
 
     <?php get_template_part('templates/four-blocks'); ?>
+    <?php get_template_part('templates/background-image-section'); ?>
 
   </div>
 

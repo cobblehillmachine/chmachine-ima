@@ -23,7 +23,12 @@
 
 @mixin font-mont-bold {
   font-family: "Montserrat",sans-serif;
-  font-weight: bold;
+  font-weight: 700;
+}
+
+@mixin font-arvo-bold {
+  font-family: "arvo",serif;
+  font-weight: 400;
 }
 
 
@@ -74,6 +79,11 @@ h3 {
   @include font-medium-large();
 }
 
+h4 {
+  @include font-arvo-bold();
+  @include font-medium-large();
+}
+
 /* Utilities */
 .clear {
   clear: both;
@@ -93,6 +103,10 @@ img {
 
 .aspect-ratio-sixteen-six {
   @include aspect-ratio(16, 6);
+}
+
+.aspect-ratio-sixteen-four {
+  @include aspect-ratio(16, 4);
 }
 
 .aspect-ratio-four-three {

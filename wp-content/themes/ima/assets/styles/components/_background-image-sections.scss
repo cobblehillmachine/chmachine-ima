@@ -1,0 +1,27 @@
+.background-image-section {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    color: $color-white;
+  }
+  h4 {
+    z-index: 2;
+    margin-bottom: 0;
+    font-style: italic;
+  }
+}
+.background-image-section::after {
+    content: "";
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: $color-black;
+  }
