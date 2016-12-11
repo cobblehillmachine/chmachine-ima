@@ -1,2 +1,14 @@
 /* Home */
-
+.home h2 {
+  margin-bottom: 0;
+}
+.members {
+  display: flex;
+  justify-content: space-between;
+  .member {
+    padding: 0 10px;
+  }
+  img {
+    height: auto;
+  }
+}
