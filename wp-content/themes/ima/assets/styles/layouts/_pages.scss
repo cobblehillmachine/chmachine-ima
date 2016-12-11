@@ -1,6 +1,19 @@
 /* Home */
-.home h2 {
-  margin-bottom: 0;
+.home {
+  h2 {
+    margin-bottom: 0;
+  }
+  .content {
+    flex-direction: column;
+    .cta-button {
+      background-color: $color-white;
+      color: #383a3b;
+      @include font-effra-regular();
+      font-size: $font-size-medium;
+      padding: 14px 50px;
+      margin-top: 10px;
+    }
+  }
 }
 .members {
   display: flex;

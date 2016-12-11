@@ -1,4 +1,7 @@
 .background-image-section {
+  @include bp(m) {
+    padding: 50px 0;
+  }
   .content {
     display: flex;
     justify-content: center;
@@ -8,10 +11,15 @@
     width: 70%;
     color: $color-white;
   }
-  h4 {
+  .content {
     z-index: 2;
+  }
+  h4 {
     margin-bottom: 0;
     font-style: italic;
+  }
+  h2, a {
+    display: block;
   }
 }
 .background-image-section::after {
