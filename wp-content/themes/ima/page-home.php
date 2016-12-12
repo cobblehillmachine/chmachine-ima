@@ -20,8 +20,11 @@
     </div>
 
     <?php get_template_part('templates/four-blocks'); ?>
+
+  </div>
     <?php get_template_part('templates/background-image-section'); ?>
 
+  <div class="main">
     <div class="full-width-text-block">
       <h2>Distributor Alliance</h2>
     </div>
@@ -50,10 +53,43 @@
       <?php endwhile; ?>
 
     </div>
-    <div class="background-image-section cta aspect-ratio-sixteen-three" style="background-image: url(<?php echo $background_image; ?>);">
-      <div class="content">
-        <h2><?php echo $cta_header; ?></h2>
-        <a class="cta-button" href="<?php echo $button_url; ?>"><?php echo $button_text; ?></a>
+  </div>
+  <div class="background-image-section cta aspect-ratio-sixteen-three" style="background-image: url(<?php echo $background_image; ?>);">
+    <div class="content">
+      <h2><?php echo $cta_header; ?></h2>
+      <a class="cta-button" href="<?php echo $button_url; ?>"><?php echo $button_text; ?></a>
+    </div>
+  </div>
+  <div class="main">
+    <div class="full-width-text-block">
+      <h2>Industry News</h2>
+    </div>
+    <div class="news-section">
+
+      <?php
+        $args = array(
+            'post_type'    => array(
+                'post'
+            ),
+            'posts_per_page' => 3,
+            'orderby' => 'menu_order'
+         );
+        $loop = new WP_Query( $args );
+        while ( $loop->have_posts() ) : $loop->the_post();
+      ?>
+
+      <div class="news-item">
+        <a href="<?php the_permalink(); ?>">
+
+          <?php the_post_thumbnail(); ?>
+
+          <h5><?php the_title(); ?></h5>
+        </a>
+      </div>
+
+      <?php endwhile; ?>
+
+
       </div>
     </div>
   </div>

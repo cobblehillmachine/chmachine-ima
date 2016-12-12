@@ -84,6 +84,12 @@ h4 {
   @include font-medium-large();
 }
 
+h5 {
+  @include font-mont-bold();
+  @include font-medium();
+  margin: 18px 0;
+}
+
 /* Utilities */
 .clear {
   clear: both;

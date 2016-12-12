@@ -1,8 +1,5 @@
 /* Home */
 .home {
-  h2 {
-    margin-bottom: 0;
-  }
   .content {
     flex-direction: column;
     .cta-button {
@@ -18,10 +15,37 @@
 .members {
   display: flex;
   justify-content: space-between;
+  @include bp(s) {
+    flex-wrap: wrap;
+  }
   .member {
-    padding: 0 10px;
+    padding: 0 20px;
+    @include bp(s) {
+      width: 48%;
+      align-self: center;
+      padding: 20px;
+    }
   }
   img {
     height: auto;
+  }
+}
+
+.news-section {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  img {
+    height: auto;
+  }
+  .news-item {
+    width: 30%;
+    @include bp(s) {
+      width: 48%;
+    }
+  }
+  a {
+    color: $color-black;
   }
 }
