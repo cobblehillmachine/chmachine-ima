@@ -49,3 +49,41 @@
     color: $color-black;
   }
 }
+
+/* About */
+.about-row {
+  display: flex;
+  flex-wrap: wrap;
+  .about-item {
+    width: 50%;
+    color: $color-white;
+    position: relative;
+    img {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      overflow: hidden;
+    }
+    @include bp(s) {
+      width: 100%;
+    }
+  }
+  .about-item:nth-of-type(1) {
+    background-color: $color-orange-light;
+    .about-content {
+      @include bp(s) {
+        padding-bottom: 150px;
+      }
+    }
+  }
+  .about-item:nth-of-type(2) {
+    background-color: $color-red;
+  }
+  .about-content {
+    padding: 70px 80px;
+  }
+  p {
+    @include font-effra-light();
+    @include font-medium();
+  }
+}
