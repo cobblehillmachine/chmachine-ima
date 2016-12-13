@@ -4,3 +4,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.hero .content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;
+  h2 {
+    color: $color-white;
+    align-self: center;
+  }
+}
