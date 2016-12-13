@@ -9,8 +9,24 @@
     justify-content: center;
     align-content: center;
     z-index: 2;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
   h2 {
     color: $color-white;
+    max-width: 600px;
+    width: 100%;
     align-self: center;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  a {
+    width: 100%;
+    @include font-effra-regular();
+    @include font-medium();
+    text-transform: uppercase;
+    color: $color-white;
+    border: 2px solid $color-white;
+    padding: 14px 50px;
   }
 }
