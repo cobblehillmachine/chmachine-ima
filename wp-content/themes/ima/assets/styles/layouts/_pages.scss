@@ -136,3 +136,39 @@
   z-index: 1;
   background-color: $color-black;
 }
+.brands {
+  margin: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  img {
+    height: auto;
+  }
+}
+.brand {
+  margin: 25px 0;
+  width: 46%;
+  @include bp(s) {
+    width: 100%;
+  }
+  h2 {
+    @include font-mont-bold();
+    @include font-medium-large();
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  img {
+    width: 100%;
+  }
+  p {
+    @include font-effra-light();
+    @include font-medium();
+  }
+  .subtitle {
+    @include font-effra-regular();
+    padding: 10px 0;
+    border-top: 1px solid $color-black;
+    border-bottom: 1px solid $color-black;
+  }
+}
+

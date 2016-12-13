@@ -3,23 +3,40 @@
   <?php get_template_part('templates/content', 'page'); ?>
   <?php get_template_part('templates/inner-hero'); ?>
 
+  <div class="main">
+    <div class="brands">
 
 
-    <?php
-      if( have_rows('story_block') ):
-        while ( have_rows('story_block') ) : the_row(); ?>
+        <?php
+          $args = array(
+              'post_type'    => array(
+                  'brand'
+              ),
+              'posts_per_page' => -1,
+              'orderby' => 'menu_order'
+           );
+          $loop = new WP_Query( $args );
+          while ( $loop->have_posts() ) : $loop->the_post();
+        ?>
 
-        <div class="story-block-row">
-          <div class="story-item">
-            <img src="<?php the_sub_field('block_image'); ?>">
-          </div>
-          <div class="story-item">
-            <div class="story-text">
-              <p><span><?php echo the_sub_field('block_intro'); ?></span><?php echo the_sub_field('block_text'); ?></p>
-            </div>
-          </div>
+        <div class="brand">
+
+            <?php the_post_thumbnail(); ?>
+            <h2><?php the_title(); ?></h2>
+
+            <p class="subtitle">
+
+              <?php echo the_field('subtitle'); ?>
+
+            </p>
+
+            <?php the_content(); ?>
+
         </div>
-      <?php endwhile; endif; ?>
+
+        <?php endwhile; ?>
 
     </div>
+  </div>
+
 <?php endwhile; ?>
