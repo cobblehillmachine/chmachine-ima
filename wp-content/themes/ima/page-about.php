@@ -25,5 +25,26 @@
       </div>
     </div>
   </div>
+  <div class="full-width-text-block">
+    <h2>History</h2>
+  </div>
+  <div>
 
+    <?php
+      if( have_rows('story_block') ):
+        while ( have_rows('story_block') ) : the_row(); ?>
+
+        <div class="story-block-row">
+          <div class="story-item">
+            <img src="<?php the_sub_field('block_image'); ?>">
+          </div>
+          <div class="story-item">
+            <div class="story-text">
+              <p><span><?php echo the_sub_field('block_intro'); ?></span><?php echo the_sub_field('block_text'); ?></p>
+            </div>
+          </div>
+        </div>
+      <?php endwhile; endif; ?>
+
+    </div>
 <?php endwhile; ?>
