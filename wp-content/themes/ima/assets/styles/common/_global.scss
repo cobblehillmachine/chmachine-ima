@@ -87,7 +87,18 @@ html {
   }
 }
 
+@mixin font-xlarge {
+  font-size: $font-size-xlarge;
+  @include bp(m) {
+    font-size: $font-size-xlarge * .75;
+  }
+}
+
 /* Headers + Such */
+h1 {
+  @include font-mont-bold();
+  @include font-xlarge();
+}
 h2 {
   @include font-mont-bold();
   @include font-large();
