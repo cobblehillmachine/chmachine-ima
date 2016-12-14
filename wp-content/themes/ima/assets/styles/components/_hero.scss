@@ -30,4 +30,10 @@
     border: 2px solid $color-white;
     padding: 14px 50px;
   }
+  p {
+    @include font-effra-regular();
+    @include font-medium();
+    color: $color-white;
+    text-align: center;
+  }
 }

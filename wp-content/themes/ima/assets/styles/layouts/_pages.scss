@@ -32,15 +32,19 @@
 }
 .link-wrap {
   text-align: center;
+  text-transform: uppercase;
+  color: $color-red;
+  p {
+    @include font-effra-bold();
+    margin: 30px 0 10px 0;
+  }
 }
 .link-out {
   @include font-effra-regular();
   @include font-small();
   color: $color-red;
-  text-align: center;
-  margin: 60px 0;
-  text-transform: uppercase;
   display: inline-block;
+  margin: 60px 0;
   &:after {
     content: '';
     display: block;
@@ -132,7 +136,8 @@
 
 /* Exclusive Brands */
 .exclusive-brands .hero::after,
-.distributor-alliance .hero::after {
+.distributor-alliance .hero::after,
+.suppliers .hero::after {
   content: "";
   opacity: 0.4;
   top: 2px;
@@ -179,3 +184,71 @@
   }
 }
 
+/* Distributor Alliance */
+.distributor-alliance {
+  .members-wrap {
+    background-color: $color-gray-light;
+  }
+  .members {
+    flex-wrap: wrap;
+  }
+  .member {
+    width: 48%;
+    position: relative;
+    padding: 75px 20px;
+    @include bp(s) {
+      width: 100%;
+    }
+    img {
+      height: 130px;
+      width: auto;
+    }
+    p {
+      @include font-effra-light();
+      @include font-medium();
+      margin: 25px 0 75px 0;
+    }
+    a {
+      background-color: $color-red;
+      color: $color-white;
+      @include font-effra-regular();
+      @include font-small();
+      padding: 14px 50px;
+      position: absolute;
+      text-transform: uppercase;
+      bottom: 40px;
+      left: 20px;
+      @include bp(l) {
+        padding: 14px 30px;
+      }
+      @include bp(m) {
+        padding: 14px 20px;
+      }
+      @include bp(s) {
+        position: static;
+      }
+    }
+  }
+}
+
+/* Suppliers */
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .benefit {
+    width: 46%;
+    padding-bottom: 75px;
+    @include bp(s) {
+      width: 100%;
+    }
+  }
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p {
+    @include font-effra-light();
+    @include font-medium();
+  }
+}
