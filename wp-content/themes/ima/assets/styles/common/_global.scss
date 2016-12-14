@@ -3,12 +3,23 @@ html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
 @font-face {
   font-family: 'Montserrat';
   src: url('../fonts/Montserrat-Bold.eot');
   src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
     url('../fonts/Montserrat-Bold.woff') format('woff'),
     url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.eot');
+  src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Regular.woff') format('woff'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -27,6 +38,11 @@ html {
 @mixin font-mont-bold {
   font-family: "Montserrat",sans-serif;
   font-weight: 700;
+}
+
+@mixin font-mont-regular {
+  font-family: "Montserrat-Regular",sans-serif;
+  font-weight: 400;
 }
 
 @mixin font-arvo-bold {

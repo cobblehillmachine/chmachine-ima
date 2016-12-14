@@ -79,17 +79,18 @@
       ?>
 
       <div class="news-item">
-        <a href="<?php the_permalink(); ?>">
 
-          <?php the_post_thumbnail(); ?>
+        <?php the_post_thumbnail(); ?>
 
-          <h5><?php the_title(); ?></h5>
-        </a>
+        <h5><?php the_title(); ?></h5>
+        <a href="<?php the_permalink(); ?>">Read More</a>
       </div>
 
       <?php endwhile; ?>
 
-
+      </div>
+      <div class="link-wrap">
+        <a class="link-out" href="/industry-news">More Industry News</a>
       </div>
     </div>
   </div>
