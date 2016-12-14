@@ -252,6 +252,33 @@
     @include font-medium();
   }
 }
+.case-study-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  padding-bottom: 50px;
+  .case-study {
+    width: 30%;
+    padding: 30px;
+    align-self: center;
+    text-align: center;
+    border: 1px solid $color-black;
+    height: 300px;
+    position: relative;
+    @include bp(m) {
+      width: 48%;
+      margin-bottom: 30px;
+    }
+    @include bp(s) {
+      width: 100%;
+      height: auto;
+    }
+  }
+  img {
+    height: auto;
+  }
+}
 
 /* News */
 .news {
@@ -259,3 +286,5 @@
     background-color: $color-orange-light;
   }
 }
+
+
