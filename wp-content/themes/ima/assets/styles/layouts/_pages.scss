@@ -252,3 +252,10 @@
     @include font-medium();
   }
 }
+
+/* News */
+.news {
+  .hero {
+    background-color: $color-orange-light;
+  }
+}

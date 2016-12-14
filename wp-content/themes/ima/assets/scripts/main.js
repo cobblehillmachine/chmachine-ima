@@ -74,4 +74,9 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
+    $('.hamburger').click(function() {
+      $('.nav-primary').toggleClass('open');
+      $('.hamburger').toggleClass('open');
+    });
+
 })(jQuery); // Fully reference jQuery after this point.

@@ -12,6 +12,12 @@
       endif;
       ?>
     </nav>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
   <div class="clear"></div>
 </header>

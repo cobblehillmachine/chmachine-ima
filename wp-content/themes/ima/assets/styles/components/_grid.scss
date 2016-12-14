@@ -10,3 +10,9 @@
     @include make-col($sidebar-sm-columns);
   }
 }
+@media screen and (max-width: 992px) {
+  .wrap {
+    position: relative;
+    top: -18px;
+  }
+}

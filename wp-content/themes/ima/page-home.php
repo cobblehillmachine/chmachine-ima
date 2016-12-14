@@ -83,7 +83,7 @@
         <?php the_post_thumbnail(); ?>
 
         <h5><?php the_title(); ?></h5>
-        <a href="<?php the_permalink(); ?>">Read More</a>
+        <a href="<?php the_permalink(); ?>">Read&nbsp;More</a>
       </div>
 
       <?php endwhile; ?>
