@@ -12,7 +12,7 @@
             'post_type'    => array(
                 'post'
             ),
-            'posts_per_page' => 3,
+            'posts_per_page' => -1,
             'orderby' => 'menu_order'
          );
         $loop = new WP_Query( $args );
