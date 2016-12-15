@@ -34,4 +34,7 @@ footer {
     @include font-effra-light();
     @include font-xsmall();
   }
+  i {
+    padding: 10px;
+  }
 }

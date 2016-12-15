@@ -54,7 +54,7 @@
 
     </div>
   </div>
-  <div class="background-image-section cta aspect-ratio-sixteen-three" style="background-image: url(<?php echo $background_image; ?>);">
+  <div class="background-image-section cta aspect-ratio-sixteen-four" style="background-image: url(<?php echo $background_image; ?>);">
     <div class="content">
       <h2><?php echo $cta_header; ?></h2>
       <a class="cta-button" href="<?php echo $button_url; ?>"><?php echo $button_text; ?></a>

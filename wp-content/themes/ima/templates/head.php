@@ -5,4 +5,5 @@
   <?php wp_head(); ?>
   <script src="https://use.typekit.net/sfl6wvz.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script src="https://use.fontawesome.com/84b3b25152.js"></script>
 </head>

@@ -1,14 +1,19 @@
 .news-section {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   text-align: center;
   flex-wrap: wrap;
   h5 {
     @include font-mont-regular();
-    margin-bottom: 30px;
+    padding-bottom: 50px;
+    @include bp(s) {
+      padding-bottom: 10px;
+    }
   }
   img {
     height: auto;
+    width: 100%;
   }
   .news-item {
     width: 30%;
@@ -20,6 +25,9 @@
     @include bp(s) {
       min-height: auto;
       margin-bottom: 50px;
+      width: 48%;
+    }
+    @include bp(xs) {
       width: 100%;
     }
     a {
@@ -27,8 +35,9 @@
       color: $color-white;
       @include font-effra-regular();
       @include font-small();
-      padding: 14px 50px;
+      padding: 11px 50px;
       position: absolute;
+      text-transform: uppercase;
       bottom: 0;
       right: 50%;
       transform: translate(50%);
