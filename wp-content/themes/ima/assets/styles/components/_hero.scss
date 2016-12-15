@@ -37,3 +37,38 @@
     text-align: center;
   }
 }
+
+.single-case_study {
+  .hero {
+    background-color: $color-blue-light;
+  }
+  .header {
+    width: 100%;
+    text-align: center;
+  }
+  .third {
+    width: 30%;
+    text-align: center;
+    align-self: center;
+    @include bp(s) {
+      width: 100%;
+    }
+    img {
+      border-radius: 100%;
+    }
+    p {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+  h2 {
+    max-width: none !important;
+  }
+  .hero .content {
+    max-width: 1100px;
+  }
+  p {
+    @include font-effra-regular();
+    @include font-medium();
+  }
+}

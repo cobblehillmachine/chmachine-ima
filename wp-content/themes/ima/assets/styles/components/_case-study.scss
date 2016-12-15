@@ -1,0 +1,8 @@
+.challenge,
+.results {
+  text-align: center;
+  p {
+    @include font-effra-light();
+    font-size: 38px;
+  }
+}

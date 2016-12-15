@@ -11,18 +11,32 @@
         <h6>Case Study</h6>
         <h2><?php the_title(); ?></h2>
       </div>
-      <div>
+      <div class="third">
         <?php echo $text_left; ?>
       </div>
-      <div>
+      <div class="third">
         <?php the_post_thumbnail(); ?>
       </div>
-      <div>
+      <div class="third">
         <?php echo $text_right; ?>
       </div>
     </div>
   </div>
   <div class="main">
+    <div class="challenge">
+      <h6>Challenge</h6>
+      <p><?php echo $challenge; ?></p>
+    </div>
+  </div>
+  <?php get_template_part('templates/background-image-section'); ?>
+  <div class="results">
+    <div>
+      <h6>Result</h6>
+      <p><?php echo $result; ?></p>
+    </div>
+    <div>
+      Other results
+    </div>
   </div>
 
 <?php endwhile; ?>

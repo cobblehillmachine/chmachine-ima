@@ -16,7 +16,7 @@
 .form {
   text-align: center;
   padding: 50px 0;
-  background-color: $color-purple;
+  background-color: $color-purple-light;
   color: $color-white;
   h6 {
     text-transform: uppercase;
@@ -31,7 +31,7 @@
   ::-webkit-input-placeholder {
     color: $color-gray-dark;
   }
-  form {
+  .form-supplier form {
     width: 75%;
     margin: 0 auto;
   }
@@ -85,4 +85,30 @@
 }
 .gform_body {
   max-width: 100%;
+}
+.form-contact {
+  .gform_wrapper ul li.gfield {
+    width: 48%;
+    @include bp(s) {
+      width: 100%;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px 20px !important;
+    }
+  }
+  #field_2_5 {
+    width: 100%;
+  }
+  form {
+    width: 50%;
+    margin: 0 auto;
+  }
+  a {
+    @include font-effra-regular();
+    @include font-small();
+    text-transform: uppercase;
+    color: $color-white;
+  }
 }
