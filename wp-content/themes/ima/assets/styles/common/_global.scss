@@ -125,6 +125,11 @@ h5 {
   margin: 18px 0;
 }
 
+h6 {
+  @include font-effra-regular();
+  @include font-medium-large();
+}
+
 /* Utilities */
 .clear {
   clear: both;

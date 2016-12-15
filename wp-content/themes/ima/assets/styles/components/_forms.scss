@@ -13,3 +13,76 @@
   @extend .btn;
   @extend .btn-secondary;
 }
+.form {
+  text-align: center;
+  padding: 50px 0;
+  background-color: $color-purple;
+  color: $color-white;
+  h6 {
+    text-transform: uppercase;
+  }
+  p,
+  input,
+  select,
+  textarea {
+    @include font-effra-light();
+    @include font-medium();
+  }
+  ::-webkit-input-placeholder {
+    color: $color-gray-dark;
+  }
+  form {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .gform_wrapper .top_label .gfield_label {
+    display: none;
+  }
+  .gform_wrapper ul li:after, .gform_wrapper ul li:before, .gform_wrapper ul.gform_fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .gform_wrapper ul li.gfield {
+    width: 32%;
+    @include bp(s) {
+      width: 100%;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px 20px !important;
+    }
+  }
+  .gform_wrapper ul.gform_fields li.gfield {
+    padding-right: 0;
+  }
+  #field_1_7 {
+    width: 100%;
+    select {
+      width: 100%;
+    }
+  }
+  #field_1_8 {
+    width: 100%;
+  }
+  select {
+    -webkit-appearance: none;
+    padding: 10px 20px !important;
+    background-color: white !important;
+  }
+}
+.gform_wrapper .gform_footer {
+  text-align: center;
+}
+.gform_wrapper .gform_footer input[type=submit] {
+  @include font-effra-regular();
+  text-transform: uppercase;
+  padding: 14px 50px;
+  color: $color-red;
+  background-color: $color-white;
+  border: none;
+}
+.gform_body {
+  max-width: 100%;
+}

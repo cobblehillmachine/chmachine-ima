@@ -25,6 +25,7 @@
   </div>
 
   <?php get_template_part('templates/background-image-section'); ?>
+  <?php get_template_part('templates/form-supplier'); ?>
 
   <div class="main">
     <div class="full-width-text-block">
