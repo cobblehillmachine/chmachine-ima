@@ -79,5 +79,11 @@
         @include font-effra-light();
       }
     }
+    .result-icon {
+      width: 35px;
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 10px;
+    }
   }
 }
