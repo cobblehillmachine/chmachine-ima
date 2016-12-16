@@ -25,9 +25,6 @@
     @include bp(s) {
       min-height: auto;
       margin-bottom: 50px;
-      width: 48%;
-    }
-    @include bp(xs) {
       width: 100%;
     }
     a {
@@ -41,6 +38,12 @@
       bottom: 0;
       right: 50%;
       transform: translate(50%);
+      border: 1px solid transparent;
+      &:hover {
+        color: $color-red;
+        background-color: $color-white;
+        border-color: $color-red;
+      }
       @include bp(l) {
         padding: 14px 30px;
       }

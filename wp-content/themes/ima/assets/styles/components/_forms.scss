@@ -81,7 +81,10 @@
   padding: 14px 50px;
   color: $color-red;
   background-color: $color-white;
-  border: none;
+  border: 1px solid transparent;
+  &:hover {
+    border-color: $color-red;
+  }
 }
 .gform_body {
   max-width: 100%;

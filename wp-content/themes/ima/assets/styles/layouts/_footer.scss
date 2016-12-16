@@ -7,6 +7,10 @@ footer {
   }
   a {
     color: $color-white;
+    &:hover {
+      color: $color-white;
+      text-decoration: underline !important;
+    }
     @include bp(s) {
       width: 100%;
       text-align: center;

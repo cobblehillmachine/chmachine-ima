@@ -30,6 +30,11 @@
     padding: 14px 50px;
     position: relative;
     bottom: -25px;
+    &:hover {
+      color: $color-gray-dark;
+      background-color: $color-white;
+      border-color: transparent;
+    }
   }
   p {
     @include font-effra-regular();
@@ -38,7 +43,11 @@
     text-align: center;
   }
 }
-
+video {
+  @include bp(m) {
+    display: none;
+  }
+}
 .single-case_study {
   .hero {
     background-color: $color-blue-light;

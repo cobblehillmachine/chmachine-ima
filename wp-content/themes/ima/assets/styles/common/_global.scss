@@ -137,6 +137,9 @@ h6 {
 img {
   max-width: 100%;
 }
+a {
+  text-decoration: none !important;
+}
 
 /* Aspect Ratios */
 .aspect-ratio-sixteen-nine {
@@ -196,6 +199,7 @@ img {
   border-bottom: 30px solid $color-white;
   position: absolute;
   left: 50%;
+  z-index: 2;
   transform: translate(-50%);
   top: -30px;
 }
@@ -218,9 +222,14 @@ img {
 .logo img {
   max-width: 140px;
   position: absolute;
-  z-index: 2;
+  z-index: 6;
   @media screen and (max-width: 990px) {
-    top: 40px;
+    top: 15px;
+  }
+}
+.home .logo img {
+  @media screen and (max-width: 990px) {
+    top: 5px;
   }
 }
 .exclusive-brands {
@@ -250,6 +259,10 @@ img {
     padding: 20px 0;
     a {
       color: $color-black;
+      text-decoration: none;
+      &:hover {
+        color: $color-red;
+      }
     }
   }
   #menu-item-29 {
@@ -335,7 +348,9 @@ img {
   width: 0%;
   left: 50%;
 }
-
+#menu-item-248 {
+  display: none;
+}
 
 @media screen and (max-width: 992px) {
   .hamburger {
@@ -348,20 +363,23 @@ img {
       display: none;
     }
   }
+  #menu-item-248 {
+    display: block;
+  }
   .nav-primary {
-    display: none;
-    transition: all .25s ease-in-out;
+    height: 0;
+    overflow: hidden;
     width: 100%;
     float: none;
     position: absolute;
-    top: 75px;
+    top: 36px;
     left: 0;
     right: 0;
-    z-index: 9;
+    z-index: 5;
     background-color: $color-gray;
   }
   .nav-primary.open {
-    display: block;
+    height: auto;
   }
   .menu-menu-1-container ul {
     display: block;
@@ -372,4 +390,9 @@ img {
   #menu-item-29 {
     display: inline-block;
   }
+}
+
+/* Active Menu States */
+.current-menu-item a {
+  color: $color-red !important;
 }
