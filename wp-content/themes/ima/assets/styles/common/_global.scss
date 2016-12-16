@@ -163,6 +163,10 @@ img {
   @include aspect-ratio(16, 3);
 }
 
+.aspect-ratio-sixteen-2 {
+  @include aspect-ratio(16, 2);
+}
+
 .aspect-ratio-four-three {
   @include aspect-ratio(4, 3);
 }
@@ -201,6 +205,16 @@ img {
   max-width: 140px;
   position: absolute;
   z-index: 2;
+}
+.exclusive-brands {
+  @include bp(m) {
+    .logo {
+      display: none;
+    }
+    h1 {
+      font-size: 28px;
+    }
+  }
 }
 .nav-primary {
   width: 80%;
