@@ -1,8 +1,83 @@
-.challenge,
-.results {
-  text-align: center;
-  p {
-    @include font-effra-light();
-    font-size: 38px;
+.single-case_study {
+  .challenge,
+  .results {
+    text-align: center;
+    p {
+      @include font-effra-light();
+      font-size: 38px;
+    }
+  }
+  .challenge {
+    padding: 120px 0;
+    h6 {
+      color: $color-red;
+    }
+  }
+  .content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    h6 {
+      width: 100%;
+      text-transform: uppercase;
+      padding-top: 30px;
+    }
+    ul {
+      width: 48%;
+      @include font-effra-regular();
+      font-size: 25px;
+      list-style-type: none;
+      text-align: left;
+      padding-left: 0;
+      padding-bottom: 30px;
+      @include bp(l) {
+        font-size: 18px;
+      }
+      @include bp(s) {
+        width: 100%;
+        padding-bottom: 0;
+      }
+    }
+  }
+  .aspect-ratio-sixteen-five:before {
+    @include bp(s) {
+      padding-top: 100%;
+    }
+  }
+  .results {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    div {
+      width: 50%;
+      @include bp(s) {
+        width: 100%;
+      }
+    }
+    .result-left {
+      background-color: $color-orange-light;
+      padding: 100px;
+    }
+    .result-right {
+      text-align: center;
+      ul {
+        width: 100%;
+        padding: 0 50px;
+        text-align: center;
+        li {
+          padding: 20px 0;
+        }
+        span {
+          display: block;
+        }
+      }
+    }
+    li {
+      @include font-effra-regular();
+      @include font-medium();
+      span {
+        @include font-effra-light();
+      }
+    }
   }
 }

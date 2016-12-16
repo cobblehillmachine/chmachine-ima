@@ -42,20 +42,34 @@
 .single-case_study {
   .hero {
     background-color: $color-blue-light;
+    p {
+      @include font-effra-regular();
+      @include font-medium();
+    }
   }
   .header {
+    color: $color-white;
     width: 100%;
     text-align: center;
+    padding-bottom: 20px;
+    @include bp(m) {
+      align-self: center;
+      padding-bottom: 0;
+    }
   }
   .third {
     width: 30%;
     text-align: center;
     align-self: center;
-    @include bp(s) {
-      width: 100%;
+    @include bp(m) {
+      display: none;
     }
     img {
-      border-radius: 100%;
+      width: 140px;
+      height: auto;
+      @include bp(l) {
+        width: 100px;
+      }
     }
     p {
       max-width: 80%;
@@ -67,10 +81,6 @@
   }
   .hero .content {
     max-width: 1100px;
-  }
-  p {
-    @include font-effra-regular();
-    @include font-medium();
   }
 }
 .distributor-alliance {

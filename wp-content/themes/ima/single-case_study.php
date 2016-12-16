@@ -30,12 +30,29 @@
   </div>
   <?php get_template_part('templates/background-image-section'); ?>
   <div class="results">
-    <div>
+    <div class="result-left">
       <h6>Result</h6>
       <p><?php echo $result; ?></p>
     </div>
-    <div>
-      Other results
+    <div class="result-right">
+      <ul>
+
+      <?php if(have_rows('result_details')):
+        while (have_rows('result_details')): the_row();
+          $type = get_sub_field('result_type');
+          $text = get_sub_field('result_text');
+      ?>
+
+
+        <li>
+
+          <?php echo $type; ?>
+
+          <span><?php echo $text; ?></span>
+        </li>
+
+      <?php endwhile; endif; ?>
+      </ul>
     </div>
   </div>
 
