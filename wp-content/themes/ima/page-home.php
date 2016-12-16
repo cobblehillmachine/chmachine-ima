@@ -54,6 +54,7 @@
 
     </div>
   </div>
+  <?php get_template_part('templates/map'); ?>
   <div class="background-image-section cta aspect-ratio-sixteen-four" style="background-image: url(<?php echo $background_image; ?>);">
     <div class="content">
       <h2><?php echo $cta_header; ?></h2>

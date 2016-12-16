@@ -1,0 +1,29 @@
+.single-post {
+  .hero {
+    background-color: $color-red;
+    p {
+      @include bp(m) {
+        display: none;
+      }
+    }
+    h2 {
+      @include bp(m) {
+        max-width: 70%;
+        margin: 0 auto;
+        font-size: 18px;
+      }
+    }
+  }
+  .post-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 40px 0;
+  }
+  .content p {
+    max-width: 900px;
+    margin: 0 auto;
+    @include font-effra-light();
+    @include font-medium();
+    padding: 15px 0;
+  }
+}
