@@ -28,6 +28,8 @@
     color: $color-white;
     border: 2px solid $color-white;
     padding: 14px 50px;
+    position: relative;
+    bottom: -25px;
   }
   p {
     @include font-effra-regular();
@@ -69,5 +71,24 @@
   p {
     @include font-effra-regular();
     @include font-medium();
+  }
+}
+.distributor-alliance {
+  @include bp(l) {
+    .hero .content {
+      max-width: 400px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+  }
+  @include bp(s) {
+    h2 {
+      display: none;
+    }
+    .hero .content a {
+      top: 50%;
+      padding: 10px 35px;
+    }
   }
 }

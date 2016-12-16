@@ -203,10 +203,6 @@
     @include bp(s) {
       width: 100%;
     }
-    img {
-      height: 130px;
-      width: auto;
-    }
     p {
       @include font-effra-light();
       @include font-medium();
