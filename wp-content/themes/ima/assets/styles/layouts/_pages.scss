@@ -117,6 +117,7 @@
 }
 .story-item {
   width: 50%;
+  position: relative;
   @include bp(s) {
     width: 100%;
   }
@@ -129,18 +130,20 @@
     font-size: 30px;
     display: inline;
     margin-right: 10px;
+    @include bp(m) {
+      font-size: 22px;
+    }
   }
 }
 .story-text {
-  padding: 25px 100px;
-  position: relative;
+  padding: 10px 20px;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  @include bp(l) {
-    padding: 25px 50px;
-  }
   @include bp(m) {
-    padding: 25px;
+    position: static;
+    transform: none;
+    top: auto;
   }
 }
 
