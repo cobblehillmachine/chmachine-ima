@@ -92,3 +92,10 @@
     }
   }
 }
+.suppliers {
+  @include bp(m) {
+    .hero .content p {
+      display: none;
+    }
+  }
+}

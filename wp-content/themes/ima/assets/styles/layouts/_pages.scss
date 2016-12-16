@@ -246,6 +246,7 @@
   h3 {
     text-transform: uppercase;
     text-align: center;
+    color: $color-red;
   }
   p {
     @include font-effra-light();
@@ -260,11 +261,10 @@
   padding-bottom: 50px;
   .case-study {
     width: 30%;
-    padding: 30px;
+    padding: 10px 30px 30px 20px;
     align-self: center;
     text-align: center;
     border: 1px solid $color-black;
-    height: 300px;
     position: relative;
     @include bp(m) {
       width: 48%;
@@ -284,6 +284,9 @@
 .news {
   .hero {
     background-color: $color-orange-light;
+  }
+  .news-item {
+    margin-bottom: 40px;
   }
 }
 

@@ -3,8 +3,6 @@
   <?php get_template_part('templates/content', 'page'); ?>
   <?php get_template_part('templates/inner-hero'); ?>
   <div class="main">
-    <div class="full-width-text-block">
-    </div>
     <div class="news-section">
 
       <?php
