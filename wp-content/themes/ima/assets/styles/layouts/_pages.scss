@@ -6,7 +6,8 @@
       background-color: $color-white;
       color: #383a3b;
       @include font-effra-regular();
-      font-size: $font-size-medium;
+      font-size: 16px;
+      letter-spacing: .05em;
       padding: 11px 50px;
       margin-top: 10px;
       text-transform: uppercase;
@@ -211,7 +212,8 @@
       background-color: $color-red;
       color: $color-white;
       @include font-effra-regular();
-      @include font-small();
+      font-size: 16px;
+      letter-spacing: .05em;
       padding: 14px 50px;
       position: absolute;
       text-transform: uppercase;

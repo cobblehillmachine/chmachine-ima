@@ -23,7 +23,8 @@
   a {
     width: 100%;
     @include font-effra-regular();
-    @include font-medium();
+    font-size: 16px;
+    letter-spacing: .05em;
     text-transform: uppercase;
     color: $color-white;
     border: 2px solid $color-white;
