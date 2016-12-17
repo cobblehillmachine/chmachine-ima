@@ -1,8 +1,14 @@
 .single-post {
+  .main .content {
+    display: none;
+    @include bp(s) {
+      display: block;
+    }
+  }
   .hero {
     background-color: $color-red;
-    p {
-      @include bp(m) {
+    .content {
+      @include bp(s) {
         display: none;
       }
     }
@@ -22,6 +28,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 40px 0;
+  }
+  .content {
+    flex-direction: column;
   }
   .content p {
     max-width: 900px;

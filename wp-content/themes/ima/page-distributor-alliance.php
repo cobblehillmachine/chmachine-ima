@@ -25,7 +25,7 @@
 
             <?php the_post_thumbnail(); ?>
             <?php the_content(); ?>
-            <a href="<?php the_field('member_url'); ?>">Place an Order</a>
+            <a href="<?php the_field('member_url'); ?>" target="_blank">Place an Order</a>
 
         </div>
 

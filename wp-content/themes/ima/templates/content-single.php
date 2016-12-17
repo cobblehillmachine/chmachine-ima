@@ -9,6 +9,10 @@
   </div>
 </div>
 <div class="main">
+  <div class="content">
+    <p><?php the_date('m.d.y'); ?></p>
+    <h2><?php the_title(); ?></h2>
+  </div>
   <div class="header-image">
   	<img src="<?php echo the_post_thumbnail_url(); ?>" alt="">
   </div>

@@ -78,7 +78,7 @@
     <?php endwhile; ?>
   </div>
   <div class="link-wrap">
-    <a class="link-out" href="/industry-news">More Industry News</a>
+    <a class="link-out" href="/news">More Industry News</a>
   </div>
 </div>
 

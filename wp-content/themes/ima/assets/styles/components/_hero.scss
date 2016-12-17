@@ -43,6 +43,12 @@
     text-align: center;
   }
 }
+.hero .content h1, .hero .content h2 {
+  @include bp(s) {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}
 video {
   @include bp(m) {
     display: none;

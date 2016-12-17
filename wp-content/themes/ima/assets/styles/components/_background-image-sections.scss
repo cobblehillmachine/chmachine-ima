@@ -12,6 +12,9 @@
     text-align: center;
     width: 70%;
     color: $color-white;
+    @include bp(s) {
+      width: 95%;
+    }
   }
   .content {
     z-index: 2;
