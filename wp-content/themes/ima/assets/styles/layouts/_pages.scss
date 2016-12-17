@@ -252,6 +252,8 @@
     text-transform: uppercase;
     text-align: center;
     color: $color-red;
+    letter-spacing: .04em;
+    font-size: 24px;
   }
   p {
     @include font-effra-light();
