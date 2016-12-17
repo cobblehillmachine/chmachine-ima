@@ -27,3 +27,16 @@
     padding: 15px 0;
   }
 }
+.prev-next-section {
+  padding: 25px 0;
+  a {
+    color: $color-black;
+    &:hover {
+      color: $color-red;
+    }
+  }
+  span {
+    @include font-effra-bold();
+    text-transform: uppercase;
+  }
+}

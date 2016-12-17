@@ -14,6 +14,14 @@
   <div class="content">
     <?php the_content(); ?>
   </div>
+  <div class="flex-container prev-next-section">
+  	<div>
+  		<?php previous_post_link('%link', '<span><i class="fa fa-arrow-left"></i> Prev</span>'); ?>
+  	</div>
+  	<div>
+  		<?php next_post_link('%link', '<span>Next <i class="fa fa-arrow-right"></i></span>'); ?>
+  	</div>
+  </div>
 </div>
 
 
