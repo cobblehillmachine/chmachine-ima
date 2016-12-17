@@ -9,7 +9,8 @@
   </div>
 </div>
 <div class="main">
-  <div class="aspect-ratio-sixteen-six post-image" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>">
+  <div class="header-image">
+  	<img src="<?php echo the_post_thumbnail_url(); ?>" alt="">
   </div>
   <div class="content">
     <?php the_content(); ?>
