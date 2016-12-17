@@ -1,4 +1,4 @@
-<div class="form form-contact">
+<div class="form form-contact" style="background-image: url(<?php echo $image; ?>);">
   <div class="main">
     <h2>Contact</h2>
 

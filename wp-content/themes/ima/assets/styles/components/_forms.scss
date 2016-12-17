@@ -18,6 +18,8 @@
   padding: 50px 0;
   background-color: $color-purple-light;
   color: $color-white;
+  position: relative;
+  z-index: 2;
   h6 {
     text-transform: uppercase;
   }
@@ -71,6 +73,17 @@
     padding: 10px 20px !important;
     background-color: white !important;
   }
+}
+.form::after {
+  content: "";
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-color: $color-purple;
 }
 .gform_wrapper .gform_footer {
   text-align: center;
