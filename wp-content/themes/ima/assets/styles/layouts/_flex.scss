@@ -1,6 +1,6 @@
 .flex-container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-direction: row;
 }
 
@@ -16,6 +16,15 @@
 .flex-three-column {
 	.flex-item {
 		width: 30%;
+    @include bp(s) {
+      width: 100%;
+    }
+	}
+}
+
+.flex-two-column  {
+	.flex-item {
+		width: 50%;
     @include bp(s) {
       width: 100%;
     }

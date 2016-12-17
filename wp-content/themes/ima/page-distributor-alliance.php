@@ -7,7 +7,7 @@
     <div class="link-wrap">
       <p>To find out more about our exclusive brands, contact one of our members below.</p>
     </div>
-    <div class="members">
+    <div class="members flex-container flex-two-column">
 
         <?php
           $args = array(
@@ -21,7 +21,7 @@
           while ( $loop->have_posts() ) : $loop->the_post();
         ?>
 
-        <div class="member">
+        <div class="member flex-item">
 
             <?php the_post_thumbnail(); ?>
             <?php the_content(); ?>
@@ -35,7 +35,7 @@
  </div>
  <div class="members-wrap">
     <div class="main">
-      <div class="members">
+      <div class="members flex-container flex-two-column">
 
           <?php
             $args = array(
@@ -50,7 +50,7 @@
             while ( $loop->have_posts() ) : $loop->the_post();
           ?>
 
-          <div class="member">
+          <div class="member flex-item">
 
               <?php the_post_thumbnail(); ?>
               <?php the_content(); ?>
@@ -64,7 +64,7 @@
     </div>
   </div>
   <div class="main">
-    <div class="members">
+    <div class="members flex-container flex-two-column">
 
         <?php
           $args = array(
@@ -79,7 +79,7 @@
           while ( $loop->have_posts() ) : $loop->the_post();
         ?>
 
-        <div class="member">
+        <div class="member flex-item">
 
             <?php the_post_thumbnail(); ?>
             <?php the_content(); ?>

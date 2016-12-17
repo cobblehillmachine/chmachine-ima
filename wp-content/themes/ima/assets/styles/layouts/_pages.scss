@@ -69,10 +69,8 @@
 
 /* About */
 .about-row {
-  display: flex;
   flex-wrap: wrap;
   .about-item {
-    width: 50%;
     color: $color-white;
     position: relative;
     img {
@@ -80,9 +78,6 @@
       bottom: 0;
       width: 100%;
       overflow: hidden;
-    }
-    @include bp(s) {
-      width: 100%;
     }
   }
   .about-item:nth-of-type(1) {
@@ -105,19 +100,13 @@
   }
 }
 .story-block-row {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 .story-block-row:nth-of-type(even) {
   flex-direction: row-reverse;
 }
 .story-item {
-  width: 50%;
   position: relative;
-  @include bp(s) {
-    width: 100%;
-  }
   p {
     @include font-effra-light();
     @include font-medium();
@@ -160,9 +149,7 @@
 }
 .brands {
   margin: 25px 0;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   img {
     height: auto;
   }
@@ -245,9 +232,7 @@
 
 /* Suppliers */
 .benefits {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   .benefit {
     width: 46%;
     padding-bottom: 75px;
@@ -266,9 +251,7 @@
   }
 }
 .case-study-section {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-content: center;
   padding-bottom: 50px;
   .case-study {

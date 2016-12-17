@@ -3,7 +3,7 @@
   <?php get_template_part('templates/content', 'page'); ?>
   <?php get_template_part('templates/inner-hero'); ?>
   <div class="main">
-    <div class="news-section">
+    <div class="news-section flex-container flex-three-column">
 
       <?php
         $args = array(
@@ -17,7 +17,7 @@
         while ( $loop->have_posts() ) : $loop->the_post();
       ?>
 
-      <div class="news-item">
+      <div class="news-item flex-item">
 
         <?php the_post_thumbnail(); ?>
 

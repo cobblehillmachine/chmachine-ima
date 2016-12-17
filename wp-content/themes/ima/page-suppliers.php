@@ -7,7 +7,7 @@
     <div class="full-width-text-block">
       <h2>Partnership Benefits</h2>
     </div>
-    <div class="benefits">
+    <div class="benefits flex-container">
 
     <?php
       if( have_rows('partnership_benefit') ):
@@ -32,7 +32,7 @@
       <h2>Case Studies</h2>
     </div>
     <div class="benefits">
-    <div class="case-study-section">
+    <div class="case-study-section flex-container flex-three-column">
 
       <?php
         $args = array(
@@ -46,7 +46,7 @@
         while ( $loop->have_posts() ) : $loop->the_post();
       ?>
 
-      <div class="case-study">
+      <div class="case-study flex-item">
 
         <a href="<?php the_permalink(); ?>">
 

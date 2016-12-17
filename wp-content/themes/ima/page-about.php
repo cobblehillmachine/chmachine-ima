@@ -9,15 +9,15 @@
   <?php get_template_part('templates/inner-hero'); ?>
 
   <div class="about-intro">
-    <div class="about-row">
-      <div class="about-item">
+    <div class="about-row flex-container flex-two-column">
+      <div class="about-item flex-item">
         <div class="about-content">
           <h2><?php echo $missionhead; ?></h2>
           <p><?php echo $missiontext; ?></p>
         </div>
         <img src="<?php echo $missionphoto; ?>">
       </div>
-      <div class="about-item">
+      <div class="about-item flex-item">
         <div class="about-content">
           <h2><?php echo $visionhead; ?></h2>
           <p><?php echo $visiontext; ?></p>
@@ -34,11 +34,11 @@
       if( have_rows('story_block') ):
         while ( have_rows('story_block') ) : the_row(); ?>
 
-        <div class="story-block-row">
-          <div class="story-item">
+        <div class="story-block-row flex-container flex-two-column">
+          <div class="story-item flex-item">
             <img src="<?php the_sub_field('block_image'); ?>">
           </div>
-          <div class="story-item">
+          <div class="story-item flex-item">
             <div class="story-text">
               <p><span><?php echo the_sub_field('block_intro'); ?></span><?php echo the_sub_field('block_text'); ?></p>
             </div>

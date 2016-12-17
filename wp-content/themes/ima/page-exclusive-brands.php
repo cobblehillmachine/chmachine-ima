@@ -4,7 +4,7 @@
   <?php get_template_part('templates/inner-hero'); ?>
 
   <div class="main">
-    <div class="brands">
+    <div class="brands flex-container">
 
 
         <?php
