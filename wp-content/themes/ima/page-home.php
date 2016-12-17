@@ -10,90 +10,76 @@
   <?php get_template_part('templates/content', 'page'); ?>
   <?php get_template_part('templates/hero'); ?>
 
-  <div class="main">
-    <div class="full-width-text-block">
-      <div class="arrow-up"></div>
-      <h2><?php echo $header; ?></h2>
-
-      <?php echo $content; ?>
-
-    </div>
-
-    <?php get_template_part('templates/four-blocks'); ?>
-
+<div class="main">
+  <div class="full-width-text-block">
+    <div class="arrow-up"></div>
+    <h2><?php echo $header; ?></h2>
+    <?php echo $content; ?>
   </div>
-    <?php get_template_part('templates/background-image-section'); ?>
+  <?php get_template_part('templates/four-blocks'); ?>
+</div>
+    
+<?php get_template_part('templates/background-image-section'); ?>
 
-  <div class="main">
-    <div class="full-width-text-block">
-      <h2>Distributor Alliance</h2>
-    </div>
-    <div class="members">
-
-      <?php
-        $args = array(
-            'post_type'    => array(
-                'member'
-            ),
-            'posts_per_page' => -1,
-            'orderby' => 'menu_order'
-         );
-        $loop = new WP_Query( $args );
-        while ( $loop->have_posts() ) : $loop->the_post();
-      ?>
-
-      <div class="member">
-        <a href="<?php echo the_field('url'); ?>">
-
-          <?php the_post_thumbnail(); ?>
-
-        </a>
-      </div>
-
-      <?php endwhile; ?>
-
-    </div>
+<div class="main">
+  <div class="full-width-text-block">
+    <h2>Distributor Alliance</h2>
   </div>
-  <?php get_template_part('templates/map'); ?>
-  <div class="background-image-section cta aspect-ratio-sixteen-four" style="background-image: url(<?php echo $background_image; ?>);">
-    <div class="content">
-      <h2><?php echo $cta_header; ?></h2>
-      <a class="cta-button" href="<?php echo $button_url; ?>"><?php echo $button_text; ?></a>
-    </div>
-  </div>
-  <div class="main">
-    <div class="full-width-text-block">
-      <h2>Industry News</h2>
-    </div>
-    <div class="news-section">
-
-      <?php
-        $args = array(
-            'post_type'    => array(
-                'post'
-            ),
-            'posts_per_page' => 3,
-            'orderby' => 'menu_order'
-         );
-        $loop = new WP_Query( $args );
-        while ( $loop->have_posts() ) : $loop->the_post();
-      ?>
-
-      <div class="news-item">
-
+  <div class="members flex-container flex-full">
+    <?php
+      $args = array(
+          'post_type'    => array(
+              'member'
+          ),
+          'posts_per_page' => -1,
+          'orderby' => 'menu_order'
+       );
+      $loop = new WP_Query( $args );
+      while ( $loop->have_posts() ) : $loop->the_post();
+    ?>
+    <div class="member flex-item">
+      <a href="<?php echo the_field('url'); ?>">
         <?php the_post_thumbnail(); ?>
-
-        <h5><?php the_title(); ?></h5>
-        <a href="<?php the_permalink(); ?>">Read&nbsp;More</a>
-      </div>
-
-      <?php endwhile; ?>
-
-      </div>
-      <div class="link-wrap">
-        <a class="link-out" href="/industry-news">More Industry News</a>
-      </div>
+      </a>
     </div>
+    <?php endwhile; ?>
+   </div>
+</div>
+
+<!-- <?php get_template_part('templates/map'); ?> -->
+
+<div class="background-image-section cta aspect-ratio-sixteen-four" style="background-image: url(<?php echo $background_image; ?>);">
+  <div class="content">
+    <h2><?php echo $cta_header; ?></h2>
+    <a class="cta-button" href="<?php echo $button_url; ?>"><?php echo $button_text; ?></a>
   </div>
+</div>
+<div class="main">
+  <div class="full-width-text-block">
+    <h2>Industry News</h2>
+  </div>
+  <div class="news-section flex-container flex-three-column">
+    <?php
+      $args = array(
+          'post_type'    => array(
+              'post'
+          ),
+          'posts_per_page' => 3,
+          'orderby' => 'menu_order'
+       );
+      $loop = new WP_Query( $args );
+      while ( $loop->have_posts() ) : $loop->the_post();
+    ?>
+    <div class="news-item flex-item">
+      <?php the_post_thumbnail(); ?>
+      <h5><?php the_title(); ?></h5>
+      <a href="<?php the_permalink(); ?>">Read&nbsp;More</a>
+    </div>
+    <?php endwhile; ?>
+  </div>
+  <div class="link-wrap">
+    <a class="link-out" href="/industry-news">More Industry News</a>
+  </div>
+</div>
 
 <?php endwhile; ?>

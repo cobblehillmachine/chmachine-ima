@@ -1,7 +1,5 @@
 .news-section {
   margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
   text-align: center;
   flex-wrap: wrap;
   h5 {
@@ -16,7 +14,6 @@
     width: 100%;
   }
   .news-item {
-    width: 30%;
     min-height: 350px;
     position: relative;
     @include bp(m) {
@@ -25,7 +22,6 @@
     @include bp(s) {
       min-height: auto;
       margin-bottom: 50px;
-      width: 100%;
     }
     a {
       background-color: $color-red;

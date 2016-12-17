@@ -20,15 +20,12 @@
   }
 }
 .members {
-  display: flex;
-  justify-content: space-between;
   @include bp(s) {
     flex-wrap: wrap;
   }
   .member {
     padding: 0 20px;
     @include bp(s) {
-      width: 48%;
       align-self: center;
       padding: 20px;
     }

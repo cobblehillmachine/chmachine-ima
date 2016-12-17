@@ -1,0 +1,31 @@
+.flex-container {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.flex-four-column {
+	.flex-item {
+    width: 24%;
+    @include bp(s) {
+			width: 48%;
+		}
+	}
+}
+
+.flex-three-column {
+	.flex-item {
+		width: 30%;
+    @include bp(s) {
+      width: 100%;
+    }
+	}
+}
+
+.flex-full {
+	.flex-item {
+    @include bp(s) {
+      width: 48%;
+		}
+	}
+}

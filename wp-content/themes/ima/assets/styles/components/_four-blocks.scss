@@ -1,11 +1,7 @@
 .four-blocks {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 50px;
+  flex-wrap: wrap;
   .block {
-    width: 24%;
     min-height: 250px;
     padding: 70px 15px 25px 15px;
     position: relative;
@@ -14,7 +10,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     @include bp(s) {
-      width: 48%;
       padding: 15px;
       display: flex;
       align-items: center;
