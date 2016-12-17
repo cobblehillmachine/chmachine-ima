@@ -135,7 +135,12 @@
 }
 .gform_wrapper .validation_message {
   color: $color-white !important;
+  @include font-effra-regular();
 }
 .instruction {
   display: none;
+}
+.gform_confirmation_message {
+  @include font-effra-bold();
+  text-transform: uppercase;
 }
