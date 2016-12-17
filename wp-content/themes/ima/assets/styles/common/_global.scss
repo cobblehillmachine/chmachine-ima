@@ -260,6 +260,8 @@ a {
     @include font-effra-regular();
     text-transform: uppercase;
     font-size: $font-size-small;
+    font-weight: 400;
+    letter-spacing: .03em;
     padding: 10px 0 20px 0;
     a {
       color: $color-black;
