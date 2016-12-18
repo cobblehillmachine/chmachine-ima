@@ -21,6 +21,7 @@
   }
 }
 .members {
+  padding-bottom: 25px;
   @include bp(s) {
     flex-wrap: wrap;
   }
@@ -201,7 +202,7 @@
     flex-wrap: wrap;
   }
   .member {
-    width: 48%;
+    width: 46% !important;
     position: relative;
     padding: 35px 20px;
     @include bp(s) {

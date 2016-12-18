@@ -7,6 +7,7 @@
     <div class="link-wrap">
       <p>To find out more about our exclusive brands, contact one of our members below.</p>
     </div>
+    <?php get_template_part('templates/map'); ?>
     <div class="members flex-container flex-two-column">
 
         <?php

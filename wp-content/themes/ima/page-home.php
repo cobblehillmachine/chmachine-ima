@@ -25,6 +25,7 @@
   <div class="full-width-text-block">
     <h2>Distributor Alliance</h2>
   </div>
+  <?php get_template_part('templates/map'); ?>
   <div class="members flex-container flex-full">
     <?php
       $args = array(
