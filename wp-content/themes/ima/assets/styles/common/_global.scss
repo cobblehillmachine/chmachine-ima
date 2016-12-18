@@ -1,13 +1,12 @@
-/* Fonts */
 html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-
 body {
   letter-spacing: .02em;
 }
 
+/* Fonts */
 @font-face {
   font-family: 'Montserrat';
   src: url('../fonts/Montserrat-Bold.eot');
@@ -17,7 +16,6 @@ body {
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Montserrat-Regular';
   src: url('../fonts/Montserrat-Regular.eot');
@@ -27,75 +25,63 @@ body {
   font-weight: bold;
   font-style: normal;
 }
-
 @mixin font-effra-light {
   font-family: "effra",sans-serif;
   font-weight: 300;
   letter-spacing: .05em;
 }
-
 @mixin font-effra-regular {
   font-family: "effra",sans-serif;
   font-weight: 500;
 }
-
 @mixin font-effra-bold {
   font-family: "effra",sans-serif;
   font-weight: 700;
 }
-
 @mixin font-mont-bold {
   font-family: "Montserrat",sans-serif;
   font-weight: 700;
 }
-
 @mixin font-mont-regular {
   font-family: "Montserrat-Regular",sans-serif;
   font-weight: 400;
 }
-
 @mixin font-arvo-bold {
   font-family: "arvo",serif;
   font-weight: 400;
 }
 
-
-/* Responsive Typography */
+/* Responsive Type */
 @mixin font-xsmall {
   font-size: $font-size-xsmall;
   @include bp(m) {
     font-size: $font-size-xsmall * .75;
   }
 }
-
 @mixin font-small {
   font-size: $font-size-small;
   @include bp(m) {
     font-size: $font-size-small * .75;
   }
 }
-
 @mixin font-medium {
   font-size: $font-size-medium;
   @include bp(m) {
     font-size: $font-size-medium * .75;
   }
 }
-
 @mixin font-medium-large {
   font-size: $font-size-medium-large;
   @include bp(m) {
     font-size: $font-size-medium-large * .75;
   }
 }
-
 @mixin font-large {
   font-size: $font-size-large;
   @include bp(m) {
     font-size: $font-size-large * .75;
   }
 }
-
 @mixin font-xlarge {
   font-size: $font-size-xlarge;
   @include bp(m) {
@@ -112,31 +98,22 @@ h2 {
   @include font-mont-bold();
   @include font-large();
 }
-
 h3 {
   @include font-mont-bold();
   @include font-medium-large();
 }
-
 h4 {
   @include font-arvo-bold();
   @include font-medium-large();
 }
-
 h5 {
   @include font-mont-bold();
   @include font-medium();
   margin: 18px 0;
 }
-
 h6 {
   @include font-effra-regular();
   @include font-medium-large();
-}
-
-/* Utilities */
-.clear {
-  clear: both;
 }
 img {
   max-width: 100%;
@@ -144,73 +121,70 @@ img {
 a {
   text-decoration: none !important;
 }
+p {
+  @include font-effra-regular();
+  @include font-medium();
+}
+
+/* Utilities */
+.clear {
+  clear: both;
+}
 
 /* Aspect Ratios */
 .aspect-ratio-sixteen-nine {
   @include aspect-ratio(16, 9);
 }
-
 .aspect-ratio-sixteen-seven {
   @include aspect-ratio(16, 7);
 }
-
 .aspect-ratio-sixteen-six {
   @include aspect-ratio(16, 6);
 }
-
 .aspect-ratio-sixteen-five {
   @include aspect-ratio(16, 5);
 }
-
 .aspect-ratio-sixteen-four {
   @include aspect-ratio(16, 4);
 }
-
 .aspect-ratio-sixteen-three {
   @include aspect-ratio(16, 3);
 }
-
 .aspect-ratio-sixteen-2 {
   @include aspect-ratio(16, 2);
 }
-
 .aspect-ratio-four-three {
   @include aspect-ratio(4, 3);
 }
-
 .aspect-ratio-three-four {
   @include aspect-ratio(3, 4);
 }
-
 .aspect-ratio-three-two {
   @include aspect-ratio(3, 2);
 }
-
 .aspect-ratio-two-three {
   @include aspect-ratio(2, 3);
 }
-
 .aspect-ratio-square {
   @include aspect-ratio(1, 1);
 }
 
 /* Shapes */
-.arrow-up {
+.arrow {
   width: 0;
   height: 0;
+  z-index: 2;
+}
+.arrow-up {
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
   border-bottom: 30px solid $color-white;
   position: absolute;
   left: 50%;
-  z-index: 2;
   transform: translate(-50%);
   top: -30px;
 }
-
 .arrow-left {
-  width: 0;
-  height: 0;
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
   border-right: 30px solid $color-white;
@@ -231,6 +205,11 @@ a {
     top: 15px;
   }
 }
+.home .logo img {
+  @media screen and (max-width: 990px) {
+    top: 5px;
+  }
+}
 .mobile-logo {
   display: none;
   position: absolute;
@@ -238,11 +217,6 @@ a {
   left: 20px;
   @include bp(s) {
     display: block;
-  }
-}
-.home .logo img {
-  @media screen and (max-width: 990px) {
-    top: 5px;
   }
 }
 .exclusive-brands {
@@ -366,7 +340,6 @@ a {
 #menu-item-248 {
   display: none;
 }
-
 @media screen and (max-width: 992px) {
   .hamburger {
     display: block;

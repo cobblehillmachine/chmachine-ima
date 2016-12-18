@@ -1,8 +1,7 @@
 .single-post {
-  .main .content {
-    display: none;
+  .hero .content {
     @include bp(s) {
-      display: block;
+      display: none;
     }
   }
   .hero {

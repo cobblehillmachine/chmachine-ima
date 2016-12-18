@@ -12,7 +12,7 @@
 
 <div class="main">
   <div class="full-width-text-block">
-    <div class="arrow-up"></div>
+    <div class="arrow arrow-up"></div>
     <h2><?php echo $header; ?></h2>
     <?php echo $content; ?>
   </div>

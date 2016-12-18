@@ -35,7 +35,7 @@
     <p><?php echo $result; ?></p>
   </div>
   <div class="result-right">
-    <div class="arrow-left"></div>
+    <div class="arrow arrow-left"></div>
     <ul>
       <?php if(have_rows('result_details')):
         while (have_rows('result_details')): the_row();

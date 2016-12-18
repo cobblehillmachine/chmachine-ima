@@ -1,11 +1,11 @@
 .announcement-bar {
   width: 100%;
   background-color: $color-gray;
-  @include font-effra-light();
   text-align: center;
-  @include font-xsmall();
-  text-transform: uppercase;
   p {
     padding: 13px;
+    @include font-effra-light();
+    @include font-xsmall();
+    text-transform: uppercase;
   }
 }
