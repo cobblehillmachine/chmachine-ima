@@ -1,6 +1,4 @@
-<?php while (have_posts()) : the_post();
-
-?>
+<?php while (have_posts()) : the_post(); ?>
 
 <div class="hero aspect-ratio-sixteen-three">
   <div class="content">
@@ -28,6 +26,5 @@
   	</div>
   </div>
 </div>
-
 
 <?php endwhile; ?>

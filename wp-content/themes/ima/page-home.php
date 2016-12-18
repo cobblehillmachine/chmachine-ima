@@ -6,9 +6,9 @@
   $button_url = get_field('button_url');
   $background_image = get_field('contact_background_image');
 ?>
-  <?php get_template_part('templates/content', 'page'); ?>
-  <?php get_template_part('templates/content', 'page'); ?>
-  <?php get_template_part('templates/hero'); ?>
+<?php get_template_part('templates/content', 'page'); ?>
+<?php get_template_part('templates/content', 'page'); ?>
+<?php get_template_part('templates/hero'); ?>
 
 <div class="main">
   <div class="full-width-text-block">
@@ -46,9 +46,6 @@
     <?php endwhile; ?>
    </div>
 </div>
-
-<!-- <?php get_template_part('templates/map'); ?> -->
-
 <div class="background-image-section cta aspect-ratio-sixteen-four" style="background-image: url(<?php echo $background_image; ?>);">
   <div class="content">
     <h2><?php echo $cta_header; ?></h2>
