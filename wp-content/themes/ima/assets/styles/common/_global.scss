@@ -231,6 +231,15 @@ a {
     top: 15px;
   }
 }
+.mobile-logo {
+  display: none;
+  position: absolute;
+  width: 60px;
+  left: 20px;
+  @include bp(s) {
+    display: block;
+  }
+}
 .home .logo img {
   @media screen and (max-width: 990px) {
     top: 5px;
