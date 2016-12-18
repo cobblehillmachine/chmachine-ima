@@ -122,6 +122,9 @@
   form {
     width: 50%;
     margin: 0 auto;
+    @include bp(s) {
+      width: 100%;
+    }
   }
   a {
     @include font-effra-regular();
