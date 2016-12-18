@@ -41,12 +41,6 @@
         background-color: $color-white;
         border-color: $color-red;
       }
-      @include bp(l) {
-        padding: 14px 30px;
-      }
-      @include bp(m) {
-        padding: 14px 20px;
-      }
       @include bp(s) {
         position: static;
       }
