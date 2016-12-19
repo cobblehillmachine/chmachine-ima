@@ -11,7 +11,7 @@
             'post_type'    => array(
                 'case_study'
             ),
-            'posts_per_page' => 3,
+            'posts_per_page' => -1,
             'orderby' => 'menu_order'
          );
         $loop = new WP_Query( $args );

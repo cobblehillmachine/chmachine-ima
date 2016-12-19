@@ -268,7 +268,6 @@
 .case-study-section {
   flex-wrap: wrap;
   align-content: center;
-  padding-bottom: 50px;
   .case-study {
     width: 30%;
     padding: 10px 30px 30px 20px;
@@ -308,4 +307,7 @@
   .hero {
     background-color: $color-green;
   } 
+  .case-study {
+    margin: 30px 0;
+  }
 }
