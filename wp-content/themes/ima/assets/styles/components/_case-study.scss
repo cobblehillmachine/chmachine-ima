@@ -4,7 +4,8 @@
     text-align: center;
     p {
       @include font-effra-light();
-      font-size: 38px;
+      font-size: 34px;
+      line-height: 40px;
     }
   }
   .challenge {
