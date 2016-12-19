@@ -71,7 +71,7 @@
         <?php elseif ($type === 'quality improvement') : ?>
         <img class="result-icon" src="/wp-content/themes/ima/assets/images/star.png">
         <?php elseif ($type === 'created opportunities') : ?>
-        <img class="supplier engagement" src="/wp-content/themes/ima/assets/images/star.png">
+        <img class="result-icon" src="/wp-content/themes/ima/assets/images/star.png">
 
         <!-- handshake icon -->
         <?php elseif ($type === 'reliable partnership') : ?>

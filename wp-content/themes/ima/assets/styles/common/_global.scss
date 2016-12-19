@@ -38,10 +38,6 @@ img {
 a {
   text-decoration: none !important;
 }
-p {
-  @include font-effra-regular();
-  @include font-medium();
-}
 
 /* Utilities */
 .clear {
