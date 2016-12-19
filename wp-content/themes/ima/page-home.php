@@ -69,7 +69,7 @@
       while ( $loop->have_posts() ) : $loop->the_post();
     ?>
     <div class="news-item flex-item">
-      <?php the_post_thumbnail(); ?>
+      <img src="<?php the_field('thumbnail_image'); ?>" alt="">
       <h5><?php the_title(); ?></h5>
       <a href="<?php the_permalink(); ?>">Read&nbsp;More</a>
     </div>
