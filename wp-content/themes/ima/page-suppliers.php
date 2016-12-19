@@ -28,24 +28,28 @@
     <h2>Case Studies</h2>
   </div>
   <div class="benefits">
-  <div class="case-study-section flex-container flex-three-column">
-    <?php
-      $args = array(
-          'post_type'    => array(
-              'case_study'
-          ),
-          'posts_per_page' => 3,
-          'orderby' => 'menu_order'
-       );
-      $loop = new WP_Query( $args );
-      while ( $loop->have_posts() ) : $loop->the_post();
-    ?>
-    <div class="case-study flex-item">
-      <a href="<?php the_permalink(); ?>">
-        <?php the_post_thumbnail(); ?>
-      </a>
+    <div class="case-study-section flex-container flex-three-column">
+      <?php
+        $args = array(
+            'post_type'    => array(
+                'case_study'
+            ),
+            'posts_per_page' => 3,
+            'orderby' => 'menu_order'
+         );
+        $loop = new WP_Query( $args );
+        while ( $loop->have_posts() ) : $loop->the_post();
+      ?>
+      <div class="case-study flex-item">
+        <a href="<?php the_permalink(); ?>">
+          <?php the_post_thumbnail(); ?>
+        </a>
+      </div>
+      <?php endwhile; ?>
     </div>
-    <?php endwhile; ?>
+  </div>
+  <div class="link-wrap">
+    <a class="link-out" href="/case-studies">More Case Studies</a>
   </div>
 </div>
 
