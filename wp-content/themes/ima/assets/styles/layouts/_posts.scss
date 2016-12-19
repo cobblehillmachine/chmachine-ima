@@ -52,3 +52,9 @@
     text-transform: uppercase;
   }
 }
+.mobile-content {
+  display: none;
+  @include bp(s) {
+    display: block;
+  }
+}

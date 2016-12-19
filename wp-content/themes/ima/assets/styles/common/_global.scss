@@ -6,89 +6,6 @@ body {
   letter-spacing: .02em;
 }
 
-/* Fonts */
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Bold.eot');
-  src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Montserrat-Bold.woff') format('woff'),
-    url('../fonts/Montserrat-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Montserrat-Regular';
-  src: url('../fonts/Montserrat-Regular.eot');
-  src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Montserrat-Regular.woff') format('woff'),
-    url('../fonts/Montserrat-Regular.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-@mixin font-effra-light {
-  font-family: "effra",sans-serif;
-  font-weight: 300;
-  letter-spacing: .05em;
-}
-@mixin font-effra-regular {
-  font-family: "effra",sans-serif;
-  font-weight: 500;
-}
-@mixin font-effra-bold {
-  font-family: "effra",sans-serif;
-  font-weight: 700;
-}
-@mixin font-mont-bold {
-  font-family: "Montserrat",sans-serif;
-  font-weight: 700;
-}
-@mixin font-mont-regular {
-  font-family: "Montserrat-Regular",sans-serif;
-  font-weight: 400;
-}
-@mixin font-arvo-bold {
-  font-family: "arvo",serif;
-  font-weight: 400;
-}
-
-/* Responsive Type */
-@mixin font-xsmall {
-  font-size: $font-size-xsmall;
-  @include bp(m) {
-    font-size: $font-size-xsmall * .75;
-  }
-}
-@mixin font-small {
-  font-size: $font-size-small;
-  @include bp(m) {
-    font-size: $font-size-small * .75;
-  }
-}
-@mixin font-medium {
-  font-size: $font-size-medium;
-  @include bp(m) {
-    font-size: $font-size-medium * .75;
-  }
-}
-@mixin font-medium-large {
-  font-size: $font-size-medium-large;
-  @include bp(m) {
-    font-size: $font-size-medium-large * .75;
-  }
-}
-@mixin font-large {
-  font-size: $font-size-large;
-  @include bp(m) {
-    font-size: $font-size-large * .75;
-  }
-}
-@mixin font-xlarge {
-  font-size: $font-size-xlarge;
-  @include bp(m) {
-    font-size: $font-size-xlarge * .75;
-  }
-}
-
 /* Headers + Such */
 h1 {
   @include font-mont-bold();
@@ -129,44 +46,6 @@ p {
 /* Utilities */
 .clear {
   clear: both;
-}
-
-/* Aspect Ratios */
-.aspect-ratio-sixteen-nine {
-  @include aspect-ratio(16, 9);
-}
-.aspect-ratio-sixteen-seven {
-  @include aspect-ratio(16, 7);
-}
-.aspect-ratio-sixteen-six {
-  @include aspect-ratio(16, 6);
-}
-.aspect-ratio-sixteen-five {
-  @include aspect-ratio(16, 5);
-}
-.aspect-ratio-sixteen-four {
-  @include aspect-ratio(16, 4);
-}
-.aspect-ratio-sixteen-three {
-  @include aspect-ratio(16, 3);
-}
-.aspect-ratio-sixteen-2 {
-  @include aspect-ratio(16, 2);
-}
-.aspect-ratio-four-three {
-  @include aspect-ratio(4, 3);
-}
-.aspect-ratio-three-four {
-  @include aspect-ratio(3, 4);
-}
-.aspect-ratio-three-two {
-  @include aspect-ratio(3, 2);
-}
-.aspect-ratio-two-three {
-  @include aspect-ratio(2, 3);
-}
-.aspect-ratio-square {
-  @include aspect-ratio(1, 1);
 }
 
 /* Shapes */
