@@ -74,7 +74,7 @@
         <img class="result-icon" src="/wp-content/themes/ima/assets/images/star.png">
 
         <!-- handshake icon -->
-        <?php elseif ($type === 'reliable partnership') : ?>
+        <?php elseif ($type === 'reliable partner') : ?>
         <img class="result-icon" src="/wp-content/themes/ima/assets/images/handshake.png">
 
         <!-- lightbulb icon -->
