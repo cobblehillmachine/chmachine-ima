@@ -82,6 +82,8 @@
         <img class="result-icon" src="/wp-content/themes/ima/assets/images/handshake.png">
         <?php elseif ($type === 'support') : ?>
         <img class="result-icon" src="/wp-content/themes/ima/assets/images/handshake.png">
+        <?php elseif ($type === 'supplier engagement') : ?>
+        <img class="result-icon" src="/wp-content/themes/ima/assets/images/handshake.png">
         <?php endif; ?>
         <?php echo $type; ?>
 
