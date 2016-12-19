@@ -14,7 +14,7 @@
   <div class="header-image">
   	<img src="<?php echo the_post_thumbnail_url(); ?>" alt="">
   </div>
-  <div class="content">
+  <div class="content body-content">
     <?php the_content(); ?>
   </div>
   <div class="flex-container prev-next-section">
