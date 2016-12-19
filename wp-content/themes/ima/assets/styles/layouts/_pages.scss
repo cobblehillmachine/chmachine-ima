@@ -82,6 +82,10 @@
   .about-item {
     color: $color-white;
     position: relative;
+    min-height: 400px;
+    @include bp(s) {
+      min-height: auto;
+    }
     img {
       position: absolute;
       bottom: 0;
