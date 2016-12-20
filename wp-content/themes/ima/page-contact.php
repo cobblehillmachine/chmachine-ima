@@ -2,6 +2,7 @@
 	$image = get_field('form_background_image');
 ?>
 <?php get_template_part('templates/content', 'page'); ?>
+
 <div class="form form-contact" style="background-image: url(<?php echo $image; ?>);">
   <div class="main">
     <h2>Contact</h2>
@@ -18,4 +19,5 @@
     <?php echo gravity_form( 2, false, false, false, '', false ); ?>
   </div>
 </div>
+
 <?php endwhile; ?>
