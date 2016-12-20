@@ -32,6 +32,9 @@
     padding: 14px 50px;
     position: relative;
     bottom: -25px;
+    @include bp(s) {
+      font-size: 12px;
+    }
     &:hover {
       color: $color-gray-dark;
       background-color: $color-white;
