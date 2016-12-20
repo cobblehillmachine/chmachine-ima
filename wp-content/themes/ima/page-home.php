@@ -39,7 +39,7 @@
       while ( $loop->have_posts() ) : $loop->the_post();
     ?>
     <div class="member flex-item">
-      <a href="<?php echo the_field('url'); ?>">
+      <a href="/distributor-alliance">
         <?php the_post_thumbnail(); ?>
       </a>
     </div>
