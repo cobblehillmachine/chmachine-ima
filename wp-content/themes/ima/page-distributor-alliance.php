@@ -20,7 +20,7 @@
       $loop = new WP_Query( $args );
       while ( $loop->have_posts() ) : $loop->the_post();
     ?>
-    <div class="member flex-item">
+    <div class="member">
       <?php the_post_thumbnail(); ?>
       <?php the_content(); ?>
       <a href="<?php the_field('member_url'); ?>" target="_blank">Place an Order</a>
