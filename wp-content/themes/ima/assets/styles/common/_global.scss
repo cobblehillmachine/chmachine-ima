@@ -43,6 +43,18 @@ a {
 .clear {
   clear: both;
 }
+.show-mobile {
+  display: none;
+  @include bp(m) {
+    display: block;
+  }
+}
+.hide-mobile {
+  display: block;
+  @include bp(m) {
+    display: none;
+  }
+}
 
 /* Shapes */
 .arrow {

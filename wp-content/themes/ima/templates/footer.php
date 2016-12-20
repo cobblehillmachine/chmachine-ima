@@ -7,7 +7,8 @@
         $number_stripped = str_replace(".", "", $number);
       ?>
       <a href="/contact">Contact</a>
-      <a href="tel:<?php echo $number_stripped; ?>"><?php echo $number; ?></a>
+      <span class="hide-mobile"><?php echo $number; ?></span>
+      <a class="show-mobile" href="tel:<?php echo $number_stripped; ?>"><?php echo $number; ?></a>
       <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a>
       <a href="<?php the_field('google_maps_link', 'option'); ?>"><?php the_field('address', 'option'); ?></a>
       <div class="footer-social">
