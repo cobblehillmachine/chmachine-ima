@@ -37,6 +37,12 @@
         width: 100%;
         padding-bottom: 0;
       }
+      li:before {
+        content: '-  ';
+        margin-right: 5px;
+        font-size: 14px;
+        display: inline-block;
+      }
     }
   }
   .aspect-ratio-sixteen-five:before {
