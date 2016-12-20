@@ -12,7 +12,7 @@
       <a href="<?php the_field('google_maps_link', 'option'); ?>"><?php the_field('address', 'option'); ?></a>
       <div class="footer-social">
         <a href="<?php echo the_field('youtube_url', 'option'); ?>" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-        <a href="<?php echo the_field('linkedin_url', 'option'); ?>" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="<?php echo the_field('linked_in_url', 'option'); ?>" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
