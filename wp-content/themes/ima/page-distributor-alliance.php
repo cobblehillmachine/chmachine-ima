@@ -74,29 +74,5 @@
     <?php endwhile; ?>
   </div>
 </div>
-<div class="members-wrap">
-  <div class="main">
-    <div class="members">
-      <?php
-        $args = array(
-            'post_type'    => array(
-                'member'
-            ),
-            'posts_per_page' => 2,
-            'orderby' => 'menu_order',
-            'offset' => 6
-         );
-        $loop = new WP_Query( $args );
-        while ( $loop->have_posts() ) : $loop->the_post();
-      ?>
-      <div class="member">
-        <?php the_post_thumbnail(); ?>
-        <?php the_content(); ?>
-        <a href="<?php the_field('member_url'); ?>">Place an Order</a>
-      </div>
-      <?php endwhile; ?>
-    </div>
-  </div>
-</div>
 
 <?php endwhile; ?>
