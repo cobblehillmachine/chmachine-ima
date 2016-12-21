@@ -88,7 +88,9 @@
             'post_type'    => array(
                 'case_study'
             ),
-            'posts_per_page' => 3
+            'posts_per_page' => 3,
+            'meta_key'    => 'category',
+            'meta_value'  => 'member'
          );
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post();

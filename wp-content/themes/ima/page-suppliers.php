@@ -41,6 +41,8 @@
             ),
             'posts_per_page' => 3,
             'orderby' => 'menu_order',
+            'meta_key'    => 'category',
+            'meta_value'  => 'supplier'
          );
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post();
