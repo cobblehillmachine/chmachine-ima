@@ -93,6 +93,14 @@
         }
       }
     });
+
+    // Smooth Scroll to Top
+    $("a[href='#top']").click(function() { 
+      $("html, body").animate({ 
+        scrollTop: 0 
+      }, "slow"); 
+      return false; 
+    });
     
 
 })(jQuery); // Fully reference jQuery after this point.

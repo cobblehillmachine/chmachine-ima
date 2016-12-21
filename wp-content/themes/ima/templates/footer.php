@@ -1,7 +1,9 @@
 <footer>
   <div class="footer-main">
     <div class="wrap">
-      <img src="/wp-content/themes/ima/assets/images/footer-logo.png">
+      <a href="#top">
+        <img src="/wp-content/themes/ima/assets/images/footer-logo.png">
+      </a>
       <?php
         $number =  get_field('phone_number', 'option');
         $number_stripped = str_replace(".", "", $number);
