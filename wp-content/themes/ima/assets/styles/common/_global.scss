@@ -273,4 +273,18 @@ a {
 /* Active Menu States */
 .current-menu-item a {
   color: $color-red !important;
+  @include font-effra-bold();
+}
+
+/* Back to Top */
+.back-to-top-section  {
+  text-align: center;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  a {
+    color: $color-red;
+    @include font-effra-bold();
+    text-transform: uppercase;
+  }
 }

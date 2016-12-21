@@ -1,3 +1,4 @@
+<?php get_template_part('templates/top'); ?>
 <footer>
   <div class="footer-main">
     <div class="wrap">
