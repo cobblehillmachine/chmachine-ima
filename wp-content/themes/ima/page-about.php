@@ -28,7 +28,7 @@
 <div class="full-width-text-block">
   <h2>History</h2>
 </div>
-<div>
+<div class="story-block-wrapper">
   <?php if( have_rows('story_block') ):
   while ( have_rows('story_block') ) : the_row(); ?>
   <div class="story-block-row flex-container flex-two-column">

@@ -108,11 +108,16 @@
   }
   .about-content {
     padding: 70px 80px;
+    max-width: 700px;
   }
   p {
     @include font-effra-light();
     @include font-medium();
   }
+}
+.story-block-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .story-block-row {
   flex-wrap: wrap;
