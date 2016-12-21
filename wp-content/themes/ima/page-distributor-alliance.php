@@ -88,21 +88,19 @@
             'post_type'    => array(
                 'case_study'
             ),
-            'posts_per_page' => 3,
-            'orderby' => 'title',
-            'order' => 'ASC'
+            'posts_per_page' => 3
          );
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post();
+        $category = get_field('category');
+        if ( $category === 'member' ): 
       ?>
-      <?php if ( get_field('category') === 'member' ): ?>
       <div class="case-study flex-item">
         <a href="<?php the_permalink(); ?>">
           <?php the_post_thumbnail(); ?>
         </a>
       </div>
-      <?php endif; ?>
-      <?php endwhile; ?>
+      <?php endif; endwhile; ?>
     </div>
   </div>
   <div class="link-wrap">
