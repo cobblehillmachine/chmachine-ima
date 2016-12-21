@@ -6,4 +6,5 @@
   <script src="https://use.typekit.net/sfl6wvz.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script src="https://use.fontawesome.com/84b3b25152.js"></script>
+  <link rel="apple-touch-icon" href="/apple_touch_icon.png">
 </head>
