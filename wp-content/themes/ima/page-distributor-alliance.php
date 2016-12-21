@@ -14,8 +14,7 @@
           'post_type'    => array(
               'member'
           ),
-          'posts_per_page' => 2,
-          'orderby' => 'menu_order'
+          'posts_per_page' => 2
        );
       $loop = new WP_Query( $args );
       while ( $loop->have_posts() ) : $loop->the_post();
@@ -36,8 +35,7 @@
             'post_type'    => array(
                 'member'
             ),
-            'posts_per_page' => 2,
-            'orderby' => 'menu_order',
+            'posts_per_page' => 2
             'offset' => 2
          );
         $loop = new WP_Query( $args );
@@ -59,8 +57,7 @@
           'post_type'    => array(
               'member'
           ),
-          'posts_per_page' => 2,
-          'orderby' => 'menu_order',
+          'posts_per_page' => 2
           'offset' => 4
        );
       $loop = new WP_Query( $args );
