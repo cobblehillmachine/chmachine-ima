@@ -82,8 +82,7 @@
             'post_type'    => array(
                 'case_study'
             ),
-            'posts_per_page' => 3,
-            'orderby' => 'menu_order'
+            'posts_per_page' => 3
          );
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post();
