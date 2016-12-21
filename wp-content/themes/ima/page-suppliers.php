@@ -23,6 +23,11 @@
 <?php get_template_part('templates/background-image-section'); ?>
 <?php get_template_part('templates/form-supplier'); ?>
 
+<div class="hero aspect-ratio-sixteen-five">
+  <div class="content">
+    <p><?php the_field('added_value'); ?></p>
+  </div>
+</div>
 <div class="main">
   <div class="full-width-text-block">
     <h2>Case Studies</h2>
