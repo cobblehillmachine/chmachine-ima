@@ -35,7 +35,7 @@
             'post_type'    => array(
                 'member'
             ),
-            'posts_per_page' => 2
+            'posts_per_page' => 2,
             'offset' => 2
          );
         $loop = new WP_Query( $args );
@@ -57,7 +57,7 @@
           'post_type'    => array(
               'member'
           ),
-          'posts_per_page' => 2
+          'posts_per_page' => 2,
           'offset' => 4
        );
       $loop = new WP_Query( $args );
