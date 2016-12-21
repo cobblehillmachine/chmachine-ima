@@ -63,6 +63,7 @@
               'post'
           ),
           'posts_per_page' => 3,
+          'orderby' => 'title',
           'order' => 'ASC'
        );
       $loop = new WP_Query( $args );

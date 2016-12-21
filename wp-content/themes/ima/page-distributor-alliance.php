@@ -14,7 +14,9 @@
           'post_type'    => array(
               'member'
           ),
-          'posts_per_page' => 2
+          'posts_per_page' => 2,
+          'orderby' => 'title',
+          'order' => 'ASC'
        );
       $loop = new WP_Query( $args );
       while ( $loop->have_posts() ) : $loop->the_post();
@@ -36,6 +38,8 @@
                 'member'
             ),
             'posts_per_page' => 2,
+            'orderby' => 'title',
+            'order' => 'ASC',
             'offset' => 2
          );
         $loop = new WP_Query( $args );
@@ -58,6 +62,8 @@
               'member'
           ),
           'posts_per_page' => 2,
+          'orderby' => 'title',
+          'order' => 'ASC',
           'offset' => 4
        );
       $loop = new WP_Query( $args );
@@ -82,7 +88,9 @@
             'post_type'    => array(
                 'case_study'
             ),
-            'posts_per_page' => 3
+            'posts_per_page' => 3,
+            'orderby' => 'title',
+            'order' => 'ASC'
          );
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post();
