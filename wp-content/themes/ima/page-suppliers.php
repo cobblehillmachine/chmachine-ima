@@ -44,6 +44,8 @@
          );
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post();
+        $category = get_field('category');
+        // if ( $category === 'supplier' ): 
       ?>
       <div class="case-study flex-item">
         <a href="<?php the_permalink(); ?>">
@@ -51,6 +53,7 @@
         </a>
       </div>
       <?php endwhile; ?>
+      <!-- endif; -->
     </div>
   </div>
   <div class="link-wrap">
