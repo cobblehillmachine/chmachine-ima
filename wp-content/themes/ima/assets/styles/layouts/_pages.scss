@@ -296,14 +296,16 @@
   }
 }
 
-.case-studies .case-study-section .case-study {
+.case-studies .case-study-section .case-study,
+.suppliers .case-study-section .case-study {
   border: none;
   align-self: flex-start;
   a {
     color: $color-red;
   }
 }
-.case-studies .case-study-section .case-study-wrapper {
+.case-studies .case-study-section .case-study-wrapper
+.suppliers .case-study-section .case-study-wrapper {
   padding: 10px 30px 30px 20px;
   text-align: center;
   border: 1px solid $color-black;

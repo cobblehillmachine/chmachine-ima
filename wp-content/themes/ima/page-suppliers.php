@@ -40,20 +40,20 @@
                 'case_study'
             ),
             'posts_per_page' => 3,
-            'orderby' => 'menu_order'
+            'orderby' => 'menu_order',
          );
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post();
-        $category = get_field('category');
-        // if ( $category === 'supplier' ): 
       ?>
-      <div class="case-study flex-item">
-        <a href="<?php the_permalink(); ?>">
-          <?php the_post_thumbnail(); ?>
-        </a>
-      </div>
+        <div class="case-study flex-item">
+          <a href="<?php the_permalink(); ?>">
+            <div class="case-study-wrapper">
+                <?php the_post_thumbnail(); ?>
+            </div>
+            <h5><?php the_title(); ?></h5>
+          </a>
+        </div>
       <?php endwhile; ?>
-      <!-- endif; -->
     </div>
   </div>
   <div class="link-wrap">
