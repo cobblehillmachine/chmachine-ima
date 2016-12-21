@@ -17,11 +17,14 @@
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post();
       ?>
-      <div class="case-study flex-item">
-        <a href="<?php the_permalink(); ?>">
-          <?php the_post_thumbnail(); ?>
-        </a>
-      </div>
+        <div class="case-study flex-item">
+          <a href="<?php the_permalink(); ?>">
+            <div class="case-study-wrapper">
+                <?php the_post_thumbnail(); ?>
+            </div>
+            <h5><?php the_title(); ?></h5>
+          </a>
+        </div>
       <?php endwhile; ?>
     </div>
   </div>
