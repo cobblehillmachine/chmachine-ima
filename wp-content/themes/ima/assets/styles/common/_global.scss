@@ -157,6 +157,7 @@ a {
   }
 }
 .hamburger {
+  padding-top: 25px;
   display: none;
   width: 45px;
   height: 35px;
@@ -250,7 +251,7 @@ a {
     width: 100%;
     float: none;
     position: absolute;
-    top: 36px;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 5;
