@@ -113,9 +113,6 @@ a {
   position: absolute;
   width: 60px;
   left: 20px;
-  @include bp(s) {
-    display: block;
-  }
 }
 .exclusive-brands {
   @include bp(m) {
@@ -250,7 +247,7 @@ a {
     width: 100px;
     left: 20px;
     @include bp(s) {
-      display: none;
+      width: 60px;
     }
   }
   #menu-item-248 {
