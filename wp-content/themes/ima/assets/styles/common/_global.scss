@@ -87,7 +87,7 @@ a {
 .logo img {
   max-width: 140px;
   position: absolute;
-  z-index: 6;
+  z-index: 5;
   @media screen and (max-width: 990px) {
     top: 15px;
   }
@@ -238,9 +238,6 @@ a {
   .logo img {
     width: 100px;
     left: 20px;
-    @include bp(s) {
-      display: none;
-    }
   }
   #menu-item-248 {
     display: block;
@@ -283,8 +280,9 @@ a {
   position: fixed;
   bottom: 25px;
   right: 25px;
+  z-index: 999;
   a {
-    color: $color-red;
+    color: $color-white;
     @include font-effra-bold();
     text-transform: uppercase;
   }
