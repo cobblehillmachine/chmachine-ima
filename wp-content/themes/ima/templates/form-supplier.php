@@ -1,4 +1,4 @@
-<div class="form form-supplier">
+<div class="form form-supplier" style="background-image: url(<?php echo $image; ?>);">
   <div class="main">
     <h6>Interested in becoming a supplier?</h6>
     <p>Fill out the form below and we'll be in touch shortly.</p>

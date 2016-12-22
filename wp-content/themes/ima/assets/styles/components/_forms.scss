@@ -20,6 +20,7 @@
   color: $color-white;
   position: relative;
   z-index: 2;
+  background-size: cover;
   h6 {
     text-transform: uppercase;
   }
@@ -76,7 +77,7 @@
 }
 .form::after {
   content: "";
-  opacity: 0.9;
+  opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;

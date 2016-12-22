@@ -101,6 +101,12 @@
       }, "slow"); 
       return false; 
     });
+
+    // YouTube Video
+    $('#player').click(function() {
+      console.log("clicking");
+      // $('.content .hero').addClass('video-active');
+    });
     
 
 })(jQuery); // Fully reference jQuery after this point.

@@ -1,4 +1,5 @@
 <?php while (have_posts()) : the_post();
+  $image = get_field('form_background_image');
 ?>
 <?php get_template_part('templates/content', 'page'); ?>
 <?php get_template_part('templates/inner-hero'); ?>
@@ -21,13 +22,21 @@
 </div>
 
 <?php get_template_part('templates/background-image-section'); ?>
-<?php get_template_part('templates/form-supplier'); ?>
 
-<div class="hero aspect-ratio-sixteen-five">
+<div class="hero aspect-ratio-sixteen-five added-value-section">
   <div class="content">
     <p><?php the_field('added_value'); ?></p>
   </div>
 </div>
+
+<div class="form form-supplier" style="background-image: url(<?php echo $image; ?>);">
+  <div class="main">
+    <h6>Interested in becoming a supplier?</h6>
+    <p>Fill out the form below and we'll be in touch shortly.</p>
+    <?php echo gravity_form( 1, false, false, false, '', false ); ?>
+  </div>
+</div>
+
 <div class="main">
   <div class="full-width-text-block">
     <h2>Case Studies</h2>

@@ -277,6 +277,9 @@
     @include font-medium();
   }
 }
+.added-value-section {
+  background-color: $color-purple;
+}
 .case-study-section {
   flex-wrap: wrap;
   align-content: center;
