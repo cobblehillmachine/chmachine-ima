@@ -284,7 +284,8 @@ a {
   bottom: 25px;
   right: 25px;
   a {
-    color: $color-red;
+    color: $color-white;
+    text-shadow: 1px 1px #000;
     @include font-effra-bold();
     text-transform: uppercase;
   }
