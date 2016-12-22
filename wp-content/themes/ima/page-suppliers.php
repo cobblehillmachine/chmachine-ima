@@ -58,10 +58,11 @@
       ?>
         <div class="case-study flex-item">
           <a href="<?php the_permalink(); ?>">
+          <h5 class="show-small"><?php the_title(); ?></h5>
             <div class="case-study-wrapper">
                 <?php the_post_thumbnail(); ?>
             </div>
-            <h5><?php the_title(); ?></h5>
+            <h5 class="hide-small"><?php the_title(); ?></h5>
           </a>
         </div>
       <?php endwhile; ?>

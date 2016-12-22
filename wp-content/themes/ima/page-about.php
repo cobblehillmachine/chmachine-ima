@@ -6,7 +6,7 @@
   $visiontext = get_field('vision_text');
 ?>
 <?php get_template_part('templates/content', 'page'); ?>
-<?php get_template_part('templates/youtube-hero'); ?>
+<?php get_template_part('templates/inner-hero'); ?>
 
 <div class="about-intro">
   <div class="about-row flex-container flex-two-column">

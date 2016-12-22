@@ -55,6 +55,17 @@ a {
     display: none;
   }
 }
+.hide-small {
+  @include bp(s) {
+    display: none;
+  }
+}
+.show-small {
+  display: none;
+  @include bp(s) {
+    display: block;
+  }
+}
 
 /* Shapes */
 .arrow {

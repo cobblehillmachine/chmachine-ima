@@ -302,11 +302,13 @@
   }
   img {
     height: auto;
+    border: 2px solid $color-black;
   }
 }
 
 .case-studies .case-study-section .case-study,
-.suppliers .case-study-section .case-study {
+.suppliers .case-study-section .case-study,
+.distributor-alliance .case-study-section .case-study {
   border: none;
   align-self: flex-start;
   a {
