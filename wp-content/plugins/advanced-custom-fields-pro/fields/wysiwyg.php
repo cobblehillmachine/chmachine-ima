@@ -46,6 +46,10 @@ class acf_field_wysiwyg extends acf_field {
     	
     	// add acf_the_content filters
     	$this->add_filters();
+    	
+    	
+		// actions
+		add_action('acf/input/admin_footer', 	array($this, 'input_admin_footer'));
 		
 		
 		// do not delete!
@@ -251,7 +255,7 @@ class acf_field_wysiwyg extends acf_field {
 
 ?>
 <script type="text/javascript">
-	if( acf ) acf.fields.wysiwyg.toolbars = <?php echo json_encode($json); ?>;
+acf.fields.wysiwyg.toolbars = <?php echo json_encode($json); ?>;
 </script>
 <?php
 	

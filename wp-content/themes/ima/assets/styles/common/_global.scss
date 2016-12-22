@@ -55,6 +55,17 @@ a {
     display: none;
   }
 }
+.hide-small {
+  @include bp(s) {
+    display: none;
+  }
+}
+.show-small {
+  display: none;
+  @include bp(s) {
+    display: block;
+  }
+}
 
 /* Shapes */
 .arrow {
@@ -87,7 +98,7 @@ a {
 .logo img {
   max-width: 140px;
   position: absolute;
-  z-index: 5;
+  z-index: 6;
   @media screen and (max-width: 990px) {
     top: 15px;
   }
@@ -238,6 +249,9 @@ a {
   .logo img {
     width: 100px;
     left: 20px;
+    @include bp(s) {
+      display: none;
+    }
   }
   #menu-item-248 {
     display: block;
@@ -283,6 +297,7 @@ a {
   z-index: 999;
   a {
     color: $color-white;
+    text-shadow: 1px 1px #000;
     @include font-effra-bold();
     text-transform: uppercase;
   }

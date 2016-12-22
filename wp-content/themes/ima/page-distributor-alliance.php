@@ -97,11 +97,15 @@
         $category = get_field('category');
         if ( $category === 'member' ): 
       ?>
-      <div class="case-study flex-item">
-        <a href="<?php the_permalink(); ?>">
-          <?php the_post_thumbnail(); ?>
-        </a>
-      </div>
+        <div class="case-study flex-item">
+          <a href="<?php the_permalink(); ?>">
+            <h5 class="show-small"><?php the_title(); ?></h5>
+            <div class="case-study-wrapper">
+                <?php the_post_thumbnail(); ?>
+            </div>
+            <h5 class="hide-small"><?php the_title(); ?></h5>
+          </a>
+        </div>
       <?php endif; endwhile; ?>
     </div>
   </div>

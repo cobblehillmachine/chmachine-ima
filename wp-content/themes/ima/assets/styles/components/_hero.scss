@@ -130,3 +130,82 @@ video {
     }
   }
 }
+
+// YouTube Hero
+.video-block--placeholder {
+  transition: .2s;
+  &:hover {
+    opacity: .8;
+    svg {
+      transform: scale(1.1);
+    }
+  }
+}
+.video-block {
+  position: relative;
+  display: block;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-color: $color-black;
+  transition: .2s;
+  .video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 37.5%;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.2;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    &.video--show {
+      opacity: 1;
+    }
+  }
+
+  img {
+    position: absolute;
+    opacity: .8;
+    transition: .2s;
+  }
+  svg {
+    position: absolute;
+    left: 48%;
+    top: 44%;
+    z-index: 2;
+    transition: transform 0.2s;
+  }
+  .stop {
+    display: none;
+  }
+}
+.video-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: $color-white;
+  transform: translateY(-50%);
+  h1 {
+    margin-bottom: 25px;
+    @include bp(s) {
+      display: none;
+    }
+  }
+  button {
+    background-color: #e73325;
+    color: #fff;
+    font-family: effra,sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: .05em;
+    padding: 14px 50px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+  }
+}

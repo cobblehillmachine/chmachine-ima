@@ -93,6 +93,7 @@
       bottom: 0;
       width: 100%;
       overflow: hidden;
+      max-height: 136px;
     }
   }
   .about-item:nth-of-type(1) {
@@ -277,6 +278,9 @@
     @include font-medium();
   }
 }
+.added-value-section {
+  background-color: $color-purple;
+}
 .case-study-section {
   flex-wrap: wrap;
   align-content: center;
@@ -298,11 +302,13 @@
   }
   img {
     height: auto;
+    border: 2px solid $color-black;
   }
 }
 
 .case-studies .case-study-section .case-study,
-.suppliers .case-study-section .case-study {
+.suppliers .case-study-section .case-study,
+.distributor-alliance .case-study-section .case-study {
   border: none;
   align-self: flex-start;
   a {
