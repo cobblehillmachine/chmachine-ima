@@ -23,9 +23,6 @@
     </div>
     <?php endwhile; ?>
   </div>
-  <div class="link-wrap">
-    <a class="link-out" href="/industry-news">More Industry News</a>
-  </div>
 </div>
 
 <?php endwhile; ?>
