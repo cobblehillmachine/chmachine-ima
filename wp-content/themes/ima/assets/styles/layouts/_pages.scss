@@ -161,7 +161,8 @@
 /* Exclusive Brands */
 .exclusive-brands .hero::after,
 .distributor-alliance .hero::after,
-.suppliers .hero::after {
+.suppliers .hero::after,
+.news .hero::after {
   content: "";
   opacity: 0.4;
   top: 0;
