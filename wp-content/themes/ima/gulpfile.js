@@ -245,7 +245,7 @@ gulp.task('clean', require('del').bind(null, [path.dist]));
 gulp.task('watch', function() {
   browserSync.init({
     files: ['{lib,templates}/**/*.php', '*.php'],
-    proxy: 'test.dev:8888',
+    proxy: 'imaforce.dev',
     snippetOptions: {
       whitelist: ['/wp-admin/admin-ajax.php'],
       blacklist: ['/wp-admin/**']
