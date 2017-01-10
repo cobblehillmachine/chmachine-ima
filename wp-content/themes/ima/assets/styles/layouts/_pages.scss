@@ -300,10 +300,13 @@
       width: 100%;
       height: auto;
     }
+    .case-study-wrapper {
+      border: 2px solid $color-black;
+    }
   }
   img {
     height: auto;
-    border: 2px solid $color-black;
+    width: 50%;
   }
 }
 
