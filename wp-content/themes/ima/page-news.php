@@ -11,7 +11,8 @@
               'post'
           ),
           'posts_per_page' => -1,
-          'order' => 'ASC'
+          'orderby' => 'date',
+          'order' => 'DESC'
        );
       $loop = new WP_Query( $args );
       while ( $loop->have_posts() ) : $loop->the_post();

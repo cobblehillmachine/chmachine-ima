@@ -63,8 +63,8 @@
               'post'
           ),
           'posts_per_page' => 3,
-          'orderby' => 'title',
-          'order' => 'ASC'
+          'orderby' => 'date',
+          'order' => 'DESC'
        );
       $loop = new WP_Query( $args );
       while ( $loop->have_posts() ) : $loop->the_post();
