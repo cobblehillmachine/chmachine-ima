@@ -61,6 +61,7 @@
           <h5 class="show-small"><?php the_title(); ?></h5>
             <div class="case-study-wrapper">
                 <?php the_post_thumbnail(); ?>
+                <p>Challenge: <?php the_field('challenge'); ?></p>
             </div>
             <h5 class="hide-small"><?php the_title(); ?></h5>
           </a>

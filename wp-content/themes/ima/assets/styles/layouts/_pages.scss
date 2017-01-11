@@ -93,7 +93,7 @@
       bottom: 0;
       width: 100%;
       overflow: hidden;
-      max-height: 136px;
+      //max-height: 136px;
     }
   }
   .about-item:nth-of-type(1) {
@@ -300,10 +300,13 @@
       width: 100%;
       height: auto;
     }
+    .case-study-wrapper {
+      border: 2px solid $color-black;
+    }
   }
   img {
     height: auto;
-    border: 2px solid $color-black;
+    width: 50%;
   }
 }
 
