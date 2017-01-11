@@ -134,6 +134,7 @@ video {
 // YouTube Hero
 // regen files
 .video-block--placeholder {
+  background-size: cover;
   transition: .2s;
   &:hover {
     opacity: .8;

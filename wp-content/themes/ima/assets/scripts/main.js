@@ -107,6 +107,22 @@
       console.log("clicking");
       // $('.content .hero').addClass('video-active');
     });
+
+  function playVideo(options) {
+    var $container = $(options.videoContainer);
+    $container.append('<iframe style="background-color:#000;" class="wistia_embed" width="700px" height="464px" src="' + options.videoSource + '" frameborder="0" allowfullscreen></iframe>').addClass('video--show');
+  }
+
+  $(".video-block").on('click', function() {
+    var $this = $(this);
+    var options = {
+      videoSource: $this.data('src'),
+      videoContainer: $this.find('.video')
+    };
+    $this.find('.play').hide();
+    $this.removeClass('video-block--placeholder');
+    playVideo(options);
+  });
     
 
 })(jQuery); // Fully reference jQuery after this point.
