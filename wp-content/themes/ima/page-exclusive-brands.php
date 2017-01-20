@@ -11,7 +11,8 @@
               'brand'
           ),
           'posts_per_page' => -1,
-          'orderby' => 'menu_order'
+          'orderby' => 'title',
+          'order' => 'ASC'
        );
       $loop = new WP_Query( $args );
       while ( $loop->have_posts() ) : $loop->the_post();
