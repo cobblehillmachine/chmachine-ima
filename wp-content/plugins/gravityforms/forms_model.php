@@ -2446,7 +2446,6 @@ class GFFormsModel {
 		foreach ( $logic['rules'] as $rule ) {
 			$source_field = RGFormsModel::get_field( $form, $rule['fieldId'] );
 			$field_value  = empty( $lead ) ? self::get_field_value( $source_field, $field_values ) : self::get_lead_field_value( $lead, $source_field );
-
 			$is_value_match = self::is_value_match( $field_value, $rule['value'], $rule['operator'], $source_field, $rule, $form );
 
 			if ( $is_value_match ) {
@@ -2524,11 +2523,24 @@ class GFFormsModel {
 		 * @param int $expiration_days The number of days until expiration. Defaults to 30.
 		 */
 		$expiration_days = apply_filters( 'gform_incomplete_submissions_expiration_days', $expiration_days );
-
 		$expiration_date = gmdate( 'Y-m-d H:i:s', time() - ( $expiration_days * 24 * 60 * 60 ) );
 
-		$table  = self::get_incomplete_submissions_table_name();
-		$result = $wpdb->query( "DELETE FROM $table WHERE date_created < '$expiration_date'" );
+		$query = array(
+			'delete' => 'DELETE',
+			'from'   => sprintf( 'FROM %s', self::get_incomplete_submissions_table_name() ),
+			'where'  => $wpdb->prepare( 'WHERE date_created < %s', $expiration_date ),
+		);
+
+		/**
+		 * Allows the query used to purge expired incomplete (save and continue) submissions to be overridden.
+		 *
+		 * @since 2.1.1.20
+		 *
+		 * @param array $query The delete, from, and where arguments to be used when the query is performed.
+		 */
+		$query = apply_filters( 'gform_purge_expired_incomplete_submissions_query', $query );
+
+		$result = $wpdb->query( implode( "\n", $query ) );
 
 		return $result;
 	}

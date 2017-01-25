@@ -962,7 +962,7 @@ var GFCalc = function(formId, formulaFields){
             } catch( e ) { }
         }
 
-        // if result is postive infinity, negative infinity or a NaN, defaults to 0
+        // if result is positive infinity, negative infinity or a NaN, defaults to 0
         if( ! isFinite( result ) )
             result = 0;
 
@@ -1295,6 +1295,10 @@ function renderRecaptcha() {
                 'theme':   $elem.data( 'theme' )
             };
 
+        if( ! $elem.is( ':empty' ) ) {
+            return;
+        }
+
         if( $elem.data( 'stoken' ) ) {
             parameters.stoken = $elem.data( 'stoken' );
         }
@@ -1314,10 +1318,12 @@ function renderRecaptcha() {
 function gformValidateFileSize( field, max_file_size ) {
 	
 	// Get validation message element.
-	var validation_element = jQuery( field ).siblings( '.validation_message' );
+	if ( jQuery( field ).closest( 'div' ).siblings( '.validation_message' ).length > 0 ) {
+		var validation_element = jQuery( field ).closest( 'div' ).siblings( '.validation_message' );
+	} else {
+		var validation_element = jQuery( field ).siblings( '.validation_message' );
+	}
 	
-	// Reset field validation.
-	validation_element.html( '' );
 	
 	// If file API is not supported within browser, return.
 	if ( ! window.FileReader || ! window.File || ! window.FileList || ! window.Blob ) {
@@ -1336,6 +1342,11 @@ function gformValidateFileSize( field, max_file_size ) {
 		// Unset file selection.
 		var input = jQuery( field );
 		input.replaceWith( input.val( '' ).clone( true ) );
+
+	} else {
+		
+		// Reset validation message.
+		validation_element.html( '' );
 		
 	}
 	

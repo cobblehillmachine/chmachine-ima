@@ -182,7 +182,7 @@ class GFEntryList {
 
 		$option_values = get_user_option( 'gform_entries_screen_options' );
 
-		if ( empty( $option_values ) ) {
+		if ( empty( $option_values ) || ! is_array( $option_values ) ) {
 			$option_values = array();
 		}
 		$option_values = array_merge( $default_values, $option_values );
