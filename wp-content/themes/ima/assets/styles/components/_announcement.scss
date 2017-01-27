@@ -2,6 +2,9 @@
   width: 100%;
   background-color: $color-gray;
   text-align: center;
+  a {
+    color: $color-black;
+  }
   p {
     padding: 13px;
     @include font-effra-light();

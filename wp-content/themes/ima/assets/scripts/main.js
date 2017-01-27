@@ -131,7 +131,7 @@
     var readText = ($(this).children('span'));
     bio.toggleClass('bio-expanded');
     readText.text(function(i, text) {
-       return text === 'Less' ? 'More': 'Less';
+       return text === 'Close' ? 'Read More': 'Close';
      });
   });
 

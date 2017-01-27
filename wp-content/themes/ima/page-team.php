@@ -22,12 +22,12 @@
       <img src="<?php the_post_thumbnail_url(); ?>" alt="">
       <h3><?php the_title(); ?></h3>
       <p><i><?php echo the_field('title'); ?></i></p>
-      <?php if ($post->post_content !== ''): ?>
       <div class="bio">
         <?php the_content(); ?>
       </div>
+      <?php if( '' !== get_post()->post_content ): ?>
+        <a href="#" class="show_hide" data-content="toggle-text"><span class="more-less">Read More</span></a>
       <?php endif; ?>
-      <a href="#" class="show_hide" data-content="toggle-text">Read <span class="more-less">More</span></a>
     </div>
     <?php endif; endwhile; ?>
     <?php wp_reset_postdata(); ?>
@@ -53,7 +53,9 @@
       <div class="bio">
         <?php the_content(); ?>
       </div>
-      <a href="#" class="show_hide" data-content="toggle-text">Read <span class="more-less">More</span></a>
+      <?php if( '' !== get_post()->post_content ): ?>
+        <a href="#" class="show_hide" data-content="toggle-text"><span class="more-less">Read More</span></a>
+      <?php endif; ?>
     </div>
     <?php endif; endwhile; ?>
     <?php wp_reset_postdata(); ?>
@@ -79,7 +81,9 @@
       <div class="content">
         <?php the_content(); ?>
       </div>
-      <a href="#" class="show_hide" data-content="toggle-text">Read <span class="more-less">More</span></a>
+      <?php if( '' !== get_post()->post_content ): ?>
+        <a href="#" class="show_hide" data-content="toggle-text"><span class="more-less">Read More</span></a>
+      <?php endif; ?>
     </div>
     <?php endif; endwhile; ?>
     <?php wp_reset_postdata(); ?>
@@ -105,7 +109,9 @@
       <div class="content">
         <?php the_content(); ?>
       </div>
-      <a href="#" class="show_hide" data-content="toggle-text">Read <span class="more-less">More</span></a>
+      <?php if( '' !== get_post()->post_content ): ?>
+        <a href="#" class="show_hide" data-content="toggle-text"><span class="more-less">Read More</span></a>
+      <?php endif; ?>
     </div>
     <?php endif; endwhile; ?>
     <?php wp_reset_postdata(); ?>
