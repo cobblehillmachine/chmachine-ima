@@ -2,9 +2,14 @@
 	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;    
+  display: flex;
 	justify-content: space-between;
 	flex-direction: row;
+}
+
+.flex-container:after {
+  content: "";
+  flex-basis: 30%;
 }
 
 .flex-four-column {

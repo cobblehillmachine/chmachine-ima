@@ -95,11 +95,11 @@
     });
 
     // Smooth Scroll to Top
-    $("a[href='#top']").click(function() { 
-      $("html, body").animate({ 
-        scrollTop: 0 
-      }, "slow"); 
-      return false; 
+    $("a[href='#top']").click(function() {
+      $("html, body").animate({
+        scrollTop: 0
+      }, "slow");
+      return false;
     });
 
     // YouTube Video
@@ -123,6 +123,18 @@
     $this.removeClass('video-block--placeholder');
     playVideo(options);
   });
-    
+
+  // Read More + Less Team Bio
+  $('.show_hide').click(function(e) {
+    e.preventDefault();
+    var bio = ($(this).prev('.bio'));
+    var readText = ($(this).children('span'));
+    bio.toggleClass('bio-expanded');
+    readText.text(function(i, text) {
+       return text === 'Less' ? 'More': 'Less';
+     });
+  });
+
+
 
 })(jQuery); // Fully reference jQuery after this point.
