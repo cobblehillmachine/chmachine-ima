@@ -78,7 +78,7 @@
       <img src="<?php the_post_thumbnail_url(); ?>" alt="">
       <h3><?php the_title(); ?></h3>
       <p><i><?php echo the_field('title'); ?></i></p>
-      <div class="content">
+      <div class="bio">
         <?php the_content(); ?>
       </div>
       <?php if( '' !== get_post()->post_content ): ?>
