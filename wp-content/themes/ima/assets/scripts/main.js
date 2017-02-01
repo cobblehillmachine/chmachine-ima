@@ -102,6 +102,21 @@
       return false;
     });
 
+    // Hover sub-menu
+    if ($(window).width() > 992) {
+      $('#menu-item-28').mouseenter(function(){
+        clearTimeout($(this).data('timeoutId'));
+        $(this).find('.sub-menu').css('display', 'block');
+      }).mouseleave(function(){
+        var $about_link = $(this),
+            timeoutId = setTimeout(function(){
+              $about_link.find('.sub-menu').css('display', 'none');
+            }, 450);
+        //set the timeoutId, allowing us to clear this trigger if the mouse comes back over
+        $about_link.data('timeoutId', timeoutId);
+      });
+    }
+
     // YouTube Video
     $('#player').click(function() {
       console.log("clicking");
