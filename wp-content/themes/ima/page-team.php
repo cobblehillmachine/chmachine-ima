@@ -11,8 +11,10 @@
           'post_type'    => array(
               'team_member'
           ),
-          'posts_per_page' => -1
-       );
+          'posts_per_page' => -1,
+          'orderby' => 'menu_order',
+          'order' => 'ASC'
+      );
       $loop = new WP_Query( $args );
       while ( $loop->have_posts() ) : $loop->the_post();
       $division = get_field('team_division');
@@ -39,7 +41,9 @@
           'post_type'    => array(
               'team_member'
           ),
-          'posts_per_page' => -1
+          'posts_per_page' => -1,
+          'orderby' => 'menu_order',
+          'order' => 'ASC'
        );
       $loop = new WP_Query( $args );
       while ( $loop->have_posts() ) : $loop->the_post();
@@ -67,7 +71,9 @@
           'post_type'    => array(
               'team_member'
           ),
-          'posts_per_page' => -1
+          'posts_per_page' => -1,
+          'orderby' => 'menu_order',
+          'order' => 'ASC'
        );
       $loop = new WP_Query( $args );
       while ( $loop->have_posts() ) : $loop->the_post();
@@ -88,14 +94,16 @@
     <?php endif; endwhile; ?>
     <?php wp_reset_postdata(); ?>
   </div>
-  <h2>QA Team</h2>
+  <h2>Quality Assurance Team</h2>
   <div class="news-section flex-container flex-three-column">
     <?php
       $args = array(
           'post_type'    => array(
               'team_member'
           ),
-          'posts_per_page' => -1
+          'posts_per_page' => -1,
+          'orderby' => 'menu_order',
+          'order' => 'ASC'
        );
       $loop = new WP_Query( $args );
       while ( $loop->have_posts() ) : $loop->the_post();
