@@ -38,6 +38,15 @@
       init: function() {
         // JavaScript to be fired on the about us page
       }
+    },
+    // Distributor Alliance
+    'distributor_alliance': {
+      init: function() {
+        // JavaScript to be fired on the Distributor Alliance page
+        $('a.place-order').click(function() {
+          ga('send', 'event', 'outbound-links', 'click', $(this).data('title'));
+        });
+      }
     }
   };
 

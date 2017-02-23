@@ -24,7 +24,8 @@
     <div class="member">
       <?php the_post_thumbnail(); ?>
       <?php the_content(); ?>
-      <a href="<?php the_field('member_url'); ?>" target="_blank">Place an Order</a>
+      <?php $title_data = str_replace(' ', '-', strtolower(get_the_title()) ); ?>
+      <a data-title="<?php echo $title_data; ?>" class="place-order" href="<?php the_field('member_url'); ?>" target="_blank">Place an Order</a>
     </div>
     <?php endwhile; ?>
    </div>
@@ -48,7 +49,8 @@
       <div class="member flex-item">
         <?php the_post_thumbnail(); ?>
         <?php the_content(); ?>
-        <a href="<?php the_field('member_url'); ?>">Place an Order</a>
+        <?php $title_data = str_replace(' ', '-', strtolower(get_the_title()) ); ?>
+        <a data-title="<?php echo $title_data; ?>" class="place-order" href="<?php the_field('member_url'); ?>">Place an Order</a>
       </div>
       <?php endwhile; ?>
     </div>
@@ -72,7 +74,8 @@
     <div class="member flex-item">
       <?php the_post_thumbnail(); ?>
       <?php the_content(); ?>
-      <a href="<?php the_field('member_url'); ?>">Place an Order</a>
+      <?php $title_data = str_replace(' ', '-', strtolower(get_the_title()) ); ?>
+      <a data-title="<?php echo $title_data; ?>" class="place-order" href="<?php the_field('member_url'); ?>">Place an Order</a>
     </div>
     <?php endwhile; ?>
   </div>
